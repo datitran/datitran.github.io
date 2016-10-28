@@ -1,1 +1,54 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dat Tran.</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="favicon" href="favicon.ico">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <img class="img-circle" src="images/dat.jpg">
+        <p></p>
+        <h2>Hello, I'm <div id="typed-strings">
+          <p>a Data Scientist.</p>
+          <p>an Entrepreneur.</p>
+          <p>Dat.</p>
+        </div>
+        <span id="typed"></span></h2>
+        <h4>data scientist / thought leader</h4>
+        <hr width="50">
+        <ul class="social">
+          <li><a href="https://de.linkedin.com/in/dat-tran-a1602320" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/datitran" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://twitter.com/datitran" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script>
+    $(function(){
+    $("#typed").typed({
+    stringsElement: $('#typed-strings'),
+    typeSpeed: 50
+    });
+    });
+    </script>
+  </body>
+</html>
