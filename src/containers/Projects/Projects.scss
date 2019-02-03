@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.projects{
+    &__container {
+        @extend .centeredContainer;
+        padding: 0 40px 30px;
+        margin-top: 30px;
+
+        @media screen and (max-width : 500px) {
+            padding: 0 40px;
+            margin-top: 10px;
+        }
+    }
+
+    &__heading {
+        border: 2px solid #fff;
+    }
+
+    &__tiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

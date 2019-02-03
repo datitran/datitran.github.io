@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+
+.projectTile {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 30%;
+        padding: 20px;
+        border: 1px solid #ddd;
+        margin: 0 1.5% 30px;
+        box-sizing: border-box;
+
+        transition: .2s;
+
+        .gitHubStats__container {
+            transition: background-color .2s;
+        }
+
+        &:hover {
+            background-color: #f7f7f7;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+            .gitHubStats__container {
+                background-color: #fff;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width : 500px) {
+            background-color: #f7f7f7;
+
+            .gitHubStats__container {
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__heading {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;       
+    }
+
+    &__title {
+        flex: 1;        
+    }
+
+    &__logo {
+        height: 30px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 1.4;
+        color: $darkgray;
+    }
+
+    &__videoButton {
+        border: 0;
+        background-color: transparent;
+        padding:0;
+        margin: 10px 0;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 14px;
+        color: $darkgray;
+        cursor: pointer;
+    }
+
+    &__github {
+        background-color: #fff;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        align-items: flex-end;
+        margin-top: 5px;
+    }
+}

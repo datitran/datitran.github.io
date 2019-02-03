@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation';
 import Posts from './components/Posts';
+import Projects from './containers/Projects/Projects'
 import Footer from './components/Footer';
 import ProfileSummary from "./components/ProfileSummary";
 
@@ -12,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Navigation/>
         <ProfileSummary/>
-        <Posts/>
+        <Projects/>
         <Footer/>
       </div>
     );

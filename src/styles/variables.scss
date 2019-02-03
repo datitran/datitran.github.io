@@ -1,0 +1,22 @@
+$gray: #d1d2d3;
+$lightgray: #f0f0f0;
+$darkgray: #767676;
+$darkestgray: #555;
+$lightestgray: #f7f7f7;
+
+$black: #000;
+$white: #fff;
+
+$font-color-primary: $black;
+$font-color-secondary: $white;
+
+$background-color-primary: $black;
+$background-color-secondary: $white;
+
+.centeredContainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
