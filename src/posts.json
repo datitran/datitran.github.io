@@ -1,0 +1,16 @@
+[
+  {
+    "title": "What is Minimum Viable (Data) Product?",
+    "url": "https://medium.com/idealo-tech-blog/what-is-minimum-viable-data-product-49269e338d85",
+    "logo": "medium",
+    "date": "2018-06-16",
+    "description": "A personal view on what MVP means for machine learning products…"
+  },
+  {
+    "title": "How you can ditch PowerPoint and build better slides with Jupyter and Reveal.js",
+    "url": "https://medium.freecodecamp.org/how-to-build-interactive-presentations-with-jupyter-notebook-and-reveal-js-c7e24f4bd9c5",
+    "logo": "medium",
+    "date": "2017-10-10",
+    "description": "In this article, I will introduce jupyter2slides — a little side project of mine that lets you easily create beautiful and interactive presentation slides using Jupyter Notebook and reveal.js."
+  }
+]
