@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
-@import '~bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 @import './variables';
 
 p {
@@ -7,9 +6,8 @@ p {
 }
 
 body {
-    background-color: $lightgray;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    background-color: white;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 section {
@@ -67,8 +65,4 @@ h2.sectionHeading {
     -webkit-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
-}
-
-.navbar .navbar-nav>li>a, .navbar .navbar-nav>li>a:hover {
-   color: white;
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Posts from './components/Posts/Posts';

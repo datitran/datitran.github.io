@@ -13,6 +13,7 @@ class Footer extends React.Component {
           <a href='https://github.com/datitran'><FontAwesomeIcon icon={faGithub}  /></a>
           <a href='https://medium.com/@datitran'><FontAwesomeIcon icon={faMedium}  /></a>
           <a href='https://twitter.com/datitran'><FontAwesomeIcon icon={faTwitter}  /></a>
+          <p>copyright &copy; Dat Tran 2016-{(new Date().getFullYear())}</p>
         </Container>
       </footer>
     )
