@@ -11,7 +11,7 @@ branches:
   - master
 script:
 - yarn install
-- yarn run build
+- CI=false yarn run build
 deploy:
   provider: pages
   skip_cleanup: true
