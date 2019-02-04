@@ -68,3 +68,7 @@ h2.sectionHeading {
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
 }
+
+.navbar .navbar-nav>li>a, .navbar .navbar-nav>li>a:hover {
+   color: white;
+}
