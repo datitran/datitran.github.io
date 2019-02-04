@@ -5,7 +5,7 @@ import GitHubService from '../../services/GitHubService';
 
 import './ProjectTile.scss';
 
-var FontAwesome = require('react-fontawesome');
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class ProjectTile extends Component {
     constructor(props) {
@@ -43,7 +43,7 @@ export default class ProjectTile extends Component {
                         <img className='projectTile__logo' src={require('../../static/logo_' + this.props.projectData.ownerLogo + '.png')} />
                 </h3>
                 <p className='projectTile__description'>{this.props.projectData.description}</p>
-                <button className='projectTile__videoButton' style={{display: this.props.projectData.videoUrl ? 'block' : 'none' }} onClick={this.openVideo.bind(this)}><FontAwesome name='play-circle' style={{ fontSize: '20px' }} /> Video Presentation</button>
+                <button className='projectTile__videoButton' style={{display: this.props.projectData.videoUrl ? 'block' : 'none' }} onClick={this.openVideo.bind(this)}><FontAwesomeIcon name='play-circle' style={{ fontSize: '20px' }} /> Video Presentation</button>
                 <div className='projectTile__content'>
                     <GitHubStats stats={this.state.stats}  language={this.state.stats.language} />
                 </div>
