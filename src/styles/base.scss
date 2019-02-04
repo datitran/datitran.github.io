@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+@import '~bootstrap/dist/css/bootstrap.css';
+@import './variables';
+
+p {
+    color: $font-color-primary;
+}
+
+body {
+    background-color: $lightgray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+section {
+    max-width: 1200px;
+    padding: 30px 40px 10px;
+}
+
+a {
+    color: $font-color-primary;
+    display: inline-block;
+
+}
+
+a.button {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid #000;
+    text-decoration: none;
+    font-weight: bold;
+
+    position: relative;
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #fff;
+        z-index: -1;
+        transition: 0.4s;
+
+        @media screen and (max-width : 500px) {
+            width: 100%;
+        }
+    }
+
+    &:hover {
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+h2.sectionHeading {
+    font-size: 28px;
+    font-weight: 700;
+    color: $font-color-secondary;
+    background-color: $background-color-secondary;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 25px 0;
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}

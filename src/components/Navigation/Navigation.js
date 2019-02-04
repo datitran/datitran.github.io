@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import profilePic from '../static/dat.jpg';
+import profilePic from '../../static/dat.jpg';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class Navigation extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/posts/">Posts</NavLink>
+                <NavLink href="/projects/">Projects</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
