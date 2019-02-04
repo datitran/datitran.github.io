@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col, Media} from "reactstrap";
 import moment from "moment";
-import posts from '../posts';
+import posts from '../data/posts';
 
 class Posts extends React.Component {
   render() {

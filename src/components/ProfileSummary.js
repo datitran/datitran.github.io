@@ -1,6 +1,6 @@
 import React from 'react';
 import {Jumbotron, Container} from "reactstrap";
-import profile from '../profile.json';
+import profile from '../data/profile';
 
 class ProfileSummary extends React.Component {
   render() {
