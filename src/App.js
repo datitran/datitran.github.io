@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation';
 import Posts from './components/Posts';
-import Projects from './containers/Projects/Projects'
+import Projects from './components/Projects/Projects'
 import Footer from './components/Footer';
 import ProfileSummary from "./components/ProfileSummary";
 
