@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Projects.scss';
 
 import ProjectTile from '../../components/ProjectTile/ProjectTile';

@@ -1,10 +1,6 @@
 import 'whatwg-fetch';
 
 class HttpService {
-    constructor() {
-
-    }
-
     checkStatus(response) {
         if (response.status >= 200 && response.status < 300) {
             return response
