@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import profilePic from '../../static/dat.jpg';
+import './Navigation.scss';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <Navbar color='dark' dark expand='md' fixed='top'>
+      <Navbar className='navigation__navbar' dark expand='md' fixed='top'>
         <Container>
           <NavbarBrand href='/'>
             <img src={profilePic} className='profile-pic' alt='Dat Tran'/>
