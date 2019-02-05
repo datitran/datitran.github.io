@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Row, Col, Media} from 'reactstrap';
 import moment from 'moment';
 import posts from '../../data/posts';
+import './Posts.scss';
 
 class Posts extends React.Component {
   render() {
@@ -20,7 +21,7 @@ class Posts extends React.Component {
                     <a href={post.url} target='_blank'>{post.title}</a>
                     <span className='jobTotalDuration'>{moment(post.date).format('YYYY, MMM Do')}</span>
                   </Media>
-                  {post.description}
+                  <i className='posts__color'>{post.description}</i>
                 </Media>
               </Media>
             );
