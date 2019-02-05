@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Posts from './components/Posts/Posts';
@@ -10,10 +11,15 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Navigation/>
-        <ProfileSummary/>
-        <Projects/>
-        <Footer/>
+        <Router>
+          <div>
+            <Navigation/>
+            <ProfileSummary/>
+            <Route exact={true} path='/' component={Projects}/>
+            <Route path="/projects" component={Projects} />
+            <Footer/>
+          </div>
+        </Router>
       </div>
     );
   }
