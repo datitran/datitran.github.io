@@ -39,7 +39,7 @@ export default class ProjectTile extends Component {
         return (
             <div className='projectTile__container'>
                 <h3 className='projectTile__heading'>
-                    <a className='projectTile__title' href={this.state.stats.html_url} target="_blank">{this.props.projectData.title}</a>
+                    <a className='projectTile__title' href={this.state.stats.html_url} target='_blank'>{this.props.projectData.title}</a>
                         <img className='projectTile__logo' src={require('../../static/logo_' + this.props.projectData.ownerLogo + '.png')} />
                 </h3>
                 <p className='projectTile__description'>{this.props.projectData.description}</p>

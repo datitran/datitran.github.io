@@ -10,15 +10,15 @@
         border: 1px solid #ddd;
         margin: 0 1.5% 30px;
         box-sizing: border-box;
-
         transition: .2s;
+        background-color: $lightestgray;
 
         .gitHubStats__container {
             transition: background-color .2s;
         }
 
         &:hover {
-            background-color: #f7f7f7;
+            background-color: $lightestgray;
             box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
             .gitHubStats__container {
                 background-color: #fff;
@@ -30,7 +30,7 @@
         }
 
         @media screen and (max-width : 500px) {
-            background-color: #f7f7f7;
+            background-color: $lightestgray;
 
             .gitHubStats__container {
                 background-color: #fff;
@@ -41,7 +41,7 @@
     &__heading {
         margin: 0;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 18px;
         padding-bottom: 5px;
         border-bottom: 2px solid #fff;
         margin-bottom: 5px;
@@ -52,7 +52,7 @@
 
     &__title {
         flex: 1;
-        color: black;        
+        color: black;
     }
 
     &__logo {
