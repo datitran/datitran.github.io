@@ -1,16 +1,58 @@
 [
   {
+    "title": "Deep Learning for Classifying Hotel Aesthetics Photos",
+    "url": "https://devblogs.nvidia.com/deep-learning-hotel-aesthetics-photos/",
+    "image_file": "logo_nvidia.png",
+    "date": "2018-10-30",
+    "description": "At idealo.de we trained two Deep Neural Networks to assess the aesthetic and technical quality of images."
+  },
+  {
     "title": "What is Minimum Viable (Data) Product?",
     "url": "https://medium.com/idealo-tech-blog/what-is-minimum-viable-data-product-49269e338d85",
-    "logo": "medium",
+    "image_file": "logo_medium.png",
     "date": "2018-06-16",
     "description": "A personal view on what MVP means for machine learning products…"
   },
   {
     "title": "How you can ditch PowerPoint and build better slides with Jupyter and Reveal.js",
     "url": "https://medium.freecodecamp.org/how-to-build-interactive-presentations-with-jupyter-notebook-and-reveal-js-c7e24f4bd9c5",
-    "logo": "medium",
+    "image_file": "logo_medium.png",
     "date": "2017-10-10",
     "description": "In this article, I will introduce jupyter2slides — a little side project of mine that lets you easily create beautiful and interactive presentation slides using Jupyter Notebook and reveal.js."
+  },
+  {
+    "title": "How to train your own Object Detector with TensorFlow’s Object Detector API",
+    "url": "https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9",
+    "image_file": "logo_medium.png",
+    "date": "2017-07-28",
+    "description": "This is a follow-up post on “Building a Real-Time Object Recognition App with Tensorflow and OpenCV” where I focus on training my own classes. Specifically, I trained my own Raccoon detector on a dataset that I collected and labeled by myself. The full dataset is available on my Github repo."
+  },
+  {
+    "title": "Building a Real-Time Object Recognition App with Tensorflow and OpenCV",
+    "url": "https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32",
+    "image_file": "logo_medium.png",
+    "date": "2017-06-22",
+    "description": "In this article, I will walk through the steps how you can easily build your own real-time object recognition application with Tensorflow’s (TF) new Object Detection API and OpenCV in Python 3 (specifically 3.5). The focus will be on the challenges that I faced when building it. You can find the full code on my repo."
+  },
+  {
+    "title": "Continuous Integration for Data Science",
+    "url": "http://engineering.pivotal.io/post/continuous-integration-for-data-science/",
+    "image_file": "logo_pivotal.jpg",
+    "date": "2017-02-16",
+    "description": "This article will show why continuous integration is also important for smart apps projects."
+  },
+  {
+    "title": "Test-Driven Development for Data Science",
+    "url": "http://engineering.pivotal.io/post/test-driven-development-for-data-science/",
+    "image_file": "logo_pivotal.jpg",
+    "date": "2016-09-15",
+    "description": "Unravelling Test-Driven Development for Data Science."
+  },
+  {
+    "title": "API First for Data Science",
+    "url": "http://engineering.pivotal.io/post/api-first-for-data-science/",
+    "image_file": "logo_pivotal.jpg",
+    "date": "2016-07-29",
+    "description": "How API first can help to create smart data-driven apps."
   }
 ]
