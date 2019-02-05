@@ -20,7 +20,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <Navbar color='dark' dark expand='md'>
+      <Navbar color='dark' dark expand='md' fixed='top'>
         <Container>
           <NavbarBrand href='/'>
             <img src={profilePic} className='profile-pic' alt='Dat Tran'/>
