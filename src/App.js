@@ -16,7 +16,7 @@ class App extends Component {
             <Navigation/>
             <ProfileSummary/>
             <Route exact={true} path='/' component={Projects}/>
-            <Route path="/projects" component={Projects} />
+            <Route path='/projects' component={Projects} />
             <Footer/>
           </div>
         </Router>

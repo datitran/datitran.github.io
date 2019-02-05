@@ -20,17 +20,17 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <Navbar color="dark" dark expand="md">
+      <Navbar color='dark' dark expand='md'>
         <Container>
-          <NavbarBrand href="/">
-            <img src={profilePic} className="profile-pic" alt="Dat Tran"/>
+          <NavbarBrand href='/'>
+            <img src={profilePic} className='profile-pic' alt='Dat Tran'/>
             <span>Dat Tran</span>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle}/>
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className='ml-auto' navbar>
               <NavItem>
-                <NavLink href="/projects/">Projects</NavLink>
+                <NavLink href='/projects/'>Projects</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
