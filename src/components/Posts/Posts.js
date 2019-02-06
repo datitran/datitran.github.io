@@ -9,6 +9,7 @@ class Posts extends React.Component {
     return <Container>
       <Row>
         <Col>
+          <h2 className='sectionHeading projects__heading'>Posts</h2>
           {posts.map(function (post, i) {
             moment.locale('en');
             return (

@@ -6,6 +6,7 @@ import Posts from './components/Posts/Posts';
 import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer';
 import ProfileSummary from './components/ProfileSummary/ProfileSummary';
+import About from './components/About/About';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route exact={true} path='/' component={Projects}/>
             <Route path='/projects' component={Projects} />
             <Route path='/posts' component={Posts} />
+            <Route path='/about' component={About} />
             <Footer/>
           </div>
         </Router>
