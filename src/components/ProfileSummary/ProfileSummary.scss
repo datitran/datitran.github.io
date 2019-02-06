@@ -4,6 +4,35 @@
     &__container {
         position: relative;
         top: 40px;
+
+        @media screen
+          and (max-width : 500px)
+          and (orientation: portrait)
+        {
+            font-size: 0.8em;
+
+            .profilesummary__display_4 {
+                font-size: 28px;
+            }
+        }
+
+        @media screen
+          and (max-width : 750px)
+          and (orientation: landscape)
+        {
+            font-size: 0.8em;
+
+            .profilesummary__display_4 {
+                font-size: 45px;
+            }
+        }
+
+    }
+
+    &__display_4 {
+        font-size: 3.5em;
+        font-weight: 300;
+        line-height: 1.2;
     }
 
     &__lead {

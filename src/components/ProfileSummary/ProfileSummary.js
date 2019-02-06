@@ -7,7 +7,7 @@ class ProfileSummary extends React.Component {
   render() {
     return <Jumbotron>
       <Container className='profilesummary__container'>
-        <h1 className='display-4'>{profile.title}</h1>
+        <h1 className='profilesummary__display_4'>{profile.title}</h1>
         <p className='profilesummary__lead'>{profile.summary}</p>
       </Container>
     </Jumbotron>;
