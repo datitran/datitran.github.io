@@ -37,6 +37,9 @@ class Navigation extends React.Component {
                 <NavLink href='/posts/'>Posts</NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href='/talks/'>Talks</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href='/about/'>About</NavLink>
               </NavItem>
             </Nav>

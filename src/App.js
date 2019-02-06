@@ -4,6 +4,7 @@ import ReactGA from 'react-ga';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Posts from './components/Posts/Posts';
+import Talks from './components/Talks/Talks';
 import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer';
 import ProfileSummary from './components/ProfileSummary/ProfileSummary';
@@ -21,9 +22,10 @@ class App extends Component {
             <Navigation/>
             <ProfileSummary/>
             <Route exact={true} path='/' component={Projects}/>
-            <Route path='/projects' component={Projects} />
-            <Route path='/posts' component={Posts} />
-            <Route path='/about' component={About} />
+            <Route path='/projects' component={Projects}/>
+            <Route path='/posts' component={Posts}/>
+            <Route path='/talks' component={Talks}/>
+            <Route path='/about' component={About}/>
             <Footer/>
           </div>
         </Router>

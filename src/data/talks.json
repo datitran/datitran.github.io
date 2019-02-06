@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Data Natives 2018",
+    "url": "https://www.slideshare.net/Dataconomy/dn18-demystifying-the-buzz-in-machine-learning-this-time-for-real-dat-tran-idealo",
+    "image_file": "logo_datanatives.jpg",
+    "date": "2018-11-23",
+    "description": "Demystifying the Buzz in Machine Learning! (This Time for Real)."
+  },
+  {
+    "title": "AI Monday Berlin",
+    "url": "https://www.youtube.com/watch?v=8vcsfz7uMX0",
+    "image_file": "logo_meetup.png",
+    "date": "2018-09-17",
+    "description": "What is the big in (Big) data? And how lean can your data be?"
+  },
+  {
+    "title": "Data Festival 2018",
+    "url": "https://www.datafestival.de/en/how-lean-can-big-data-be-dat-tran-presents-mvp-approach/",
+    "image_file": "logo_datafestival.jpg",
+    "date": "2018-04-17",
+    "description": "What is the big in (Big) data? And how lean can your data be?"
+  },
+  {
+    "title": "AI in Data Science - Berlin",
+    "url": "https://www.youtube.com/watch?v=UrO8EN-BZmE",
+    "image_file": "logo_meetup.png",
+    "date": "2018-02-22",
+    "description": "What is the big in (Big) data? And how lean can your data be?"
+  },
+  {
+    "title": "Pivotal Big Data Roadshow",
+    "url": "https://www.slideshare.net/PivotalKorea/smart-apppivotal-by-dat-tran",
+    "image_file": "logo_pivotal.jpg",
+    "date": "2017-04-05",
+    "description": "Smart data-driven apps."
+  },
+  {
+    "title": "Cloud Foundry Europe Summit 2016",
+    "url": "https://www.youtube.com/watch?v=z7AmakqpgdQ&feature=youtu.be",
+    "image_file": "logo_cloudfoundry.png",
+    "date": "2016-09-27",
+    "description": "Saving human lives with the IoT."
+  },
+  {
+    "title": "PyData San Francisco 2016",
+    "url": "https://www.youtube.com/watch?v=HyjZFYDubf8&feature=youtu.be",
+    "image_file": "logo_pydata.png",
+    "date": "2016-08-14",
+    "description": "How you really get your data science models into production - the cool way!"
+  },
+  {
+    "title": "PyData Berlin 2016",
+    "url": "https://www.youtube.com/watch?v=ZojIGRS3HLY&feature=youtu.be",
+    "image_file": "logo_pydata.png",
+    "date": "2016-05-21",
+    "description": "PySpark in Practice - Joint talk with Ronert Obst."
+  },
+  {
+    "title": "PyData London 2016",
+    "url": "https://www.youtube.com/watch?v=SETpipUZ_Lc&feature=youtu.be",
+    "image_file": "logo_pydata.png",
+    "date": "2016-05-07",
+    "description": "PySpark in Practice - Joint talk with Ronert Obst."
+  }
+]

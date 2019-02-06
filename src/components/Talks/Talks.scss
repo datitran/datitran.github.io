@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.talks {
+    &__color {
+        color: $darkgray;
+    }
+
+    &__image {
+        border-radius: 10px !important;
+    }
+}
