@@ -3,8 +3,8 @@
 .projects{
     &__container {
         @extend .centeredContainer;
-        padding: 0 40px 30px;
-        margin-top: 30px;
+        padding: 0 20px 30px;
+        margin-top: 5px;
 
         @media screen and (max-width : 500px) {
             padding: 0 40px;

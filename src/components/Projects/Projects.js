@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'reactstrap';
 import './Projects.scss';
 
 import ProjectTile from '../../components/ProjectTile/ProjectTile';
@@ -18,11 +19,13 @@ export default (props) => {
   }
 
   return (
-    <section className='projects__container' id='projects'>
-      <h2 className='sectionHeading projects__heading'>Projects</h2>
-      <div className='projects__tiles'>
-        {renderProjectTiles()}
-      </div>
-    </section>
+    <Container>
+        <h2 className='sectionHeading projects__heading'>Projects</h2>
+          <section className='projects__container' id='projects'>
+            <div className='projects__tiles'>
+              {renderProjectTiles()}
+            </div>
+          </section>
+    </Container>
   );
 }
