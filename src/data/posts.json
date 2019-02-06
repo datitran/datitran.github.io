@@ -1,5 +1,12 @@
 [
   {
+    "title": "Using Terraform to Quick Start PySpark on AWS",
+    "url": "https://medium.com/idealo-tech-blog/using-terraform-to-quick-start-pyspark-on-aws-2bc8ce9dcac",
+    "image_file": "logo_idealotech.jpg",
+    "date": "2019-01-07",
+    "description": "Step-by-step guide on how to use Terraform to spin up an EMR cluster with PySpark and Anaconda on AWS."
+  },
+  {
     "title": "Deep Learning for Classifying Hotel Aesthetics Photos",
     "url": "https://devblogs.nvidia.com/deep-learning-hotel-aesthetics-photos/",
     "image_file": "logo_nvidia.png",
@@ -7,32 +14,81 @@
     "description": "At idealo.de we trained two Deep Neural Networks to assess the aesthetic and technical quality of images."
   },
   {
+    "title": "Falcon vs. Flask — Which one to pick to create a scalable deep learning REST API",
+    "url": "https://medium.com/idealo-tech-blog/falcon-vs-flask-which-one-to-pick-to-create-a-scalable-deep-learning-rest-api-adef647ebdec",
+    "image_file": "logo_idealotech.jpg",
+    "date": "2018-07-17",
+    "description": "Another comparison of two Python web frameworks — Flask and Falcon as a machine learning rest API."
+  },
+  {
     "title": "What is Minimum Viable (Data) Product?",
     "url": "https://medium.com/idealo-tech-blog/what-is-minimum-viable-data-product-49269e338d85",
-    "image_file": "logo_medium.png",
+    "image_file": "logo_idealotech.jpg",
     "date": "2018-06-16",
-    "description": "A personal view on what MVP means for machine learning products…"
+    "description": "A personal view on what MVP means for machine learning products."
   },
   {
     "title": "How you can ditch PowerPoint and build better slides with Jupyter and Reveal.js",
     "url": "https://medium.freecodecamp.org/how-to-build-interactive-presentations-with-jupyter-notebook-and-reveal-js-c7e24f4bd9c5",
-    "image_file": "logo_medium.png",
+    "image_file": "logo_freecodecamp.png",
     "date": "2017-10-10",
     "description": "In this article, I will introduce jupyter2slides — a little side project of mine that lets you easily create beautiful and interactive presentation slides using Jupyter Notebook and reveal.js."
   },
   {
+    "title": "Why the AI Hype Train is Already off the Rails and Why I’m Over AI Already",
+    "url": "https://builttoadapt.io/why-the-ai-hype-train-is-already-off-the-rails-and-why-im-over-ai-already-e7314e972ef4",
+    "image_file": "logo_bta.png",
+    "date": "2017-08-18",
+    "description": "One data scientist on the hype around artificial intelligence."
+  },
+  {
     "title": "How to train your own Object Detector with TensorFlow’s Object Detector API",
     "url": "https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9",
-    "image_file": "logo_medium.png",
+    "image_file": "logo_towards_data_science.jpg",
     "date": "2017-07-28",
     "description": "This is a follow-up post on “Building a Real-Time Object Recognition App with Tensorflow and OpenCV” where I focus on training my own classes. Specifically, I trained my own Raccoon detector on a dataset that I collected and labeled by myself. The full dataset is available on my Github repo."
   },
   {
+    "title": "My two cents on what makes a good data scientist nowadays?",
+    "url": "https://towardsdatascience.com/my-two-cents-on-what-makes-a-good-data-scientist-nowadays-fea67931766a",
+    "image_file": "logo_towards_data_science.jpg",
+    "date": "2017-07-19",
+    "description": "In this article, I explained what skills are important for data scientists these days."
+  },
+  {
+    "title": "Face2face — A Pix2Pix demo that mimics the facial expression of the German chancellor",
+    "url": "https://towardsdatascience.com/face2face-a-pix2pix-demo-that-mimics-the-facial-expression-of-the-german-chancellor-b6771d65bf66",
+    "image_file": "logo_towards_data_science.jpg",
+    "date": "2017-07-04",
+    "description": "Inspired by one of Gene Kogan’s workshop, I created my own face2face demo that translates my webcam image into the German chancellor when giving her New Year’s speech in 2017."
+  },
+  {
     "title": "Building a Real-Time Object Recognition App with Tensorflow and OpenCV",
     "url": "https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32",
-    "image_file": "logo_medium.png",
+    "image_file": "logo_towards_data_science.jpg",
     "date": "2017-06-22",
     "description": "In this article, I will walk through the steps how you can easily build your own real-time object recognition application with Tensorflow’s (TF) new Object Detection API and OpenCV in Python 3 (specifically 3.5). The focus will be on the challenges that I faced when building it. You can find the full code on my repo."
+  },
+  {
+    "title": "Using Docker to Set Up a Deep Learning Environment on AWS",
+    "url": "https://towardsdatascience.com/using-docker-to-set-up-a-deep-learning-environment-on-aws-6af37a78c551",
+    "image_file": "logo_towards_data_science.jpg",
+    "date": "2017-05-19",
+    "description": "In this article, I will use docker, particularly nvidia-docker instead to simplify the installation process and therefore speed up the setup process."
+  },
+  {
+    "title": "Scoring at Scale with Keras and TensorFlow on Greenplum",
+    "url": "http://engineering.pivotal.io/post/continuous-integration-for-data-science/",
+    "image_file": "logo_pivotal.jpg",
+    "date": "2017-05-04",
+    "description": "How to train a deep neural network with Keras and TensorFlow and then apply it for scoring on Greenplum."
+  },
+  {
+    "title": "8 “Simple” Guidelines For Data Projects",
+    "url": "https://builttoadapt.io/8-simple-guidelines-for-data-projects-859a1a738ffc",
+    "image_file": "logo_bta.png",
+    "date": "2017-04-21",
+    "description": "Advice for building impactful data products."
   },
   {
     "title": "Continuous Integration for Data Science",
@@ -40,6 +96,48 @@
     "image_file": "logo_pivotal.jpg",
     "date": "2017-02-16",
     "description": "This article will show why continuous integration is also important for smart apps projects."
+  },
+  {
+    "title": "Operationalizing PySpark Data Science Models on Pivotal Cloud Foundry",
+    "url": "http://engineering.pivotal.io/post/continuous-integration-for-data-science/",
+    "image_file": "logo_pivotal.jpg",
+    "date": "2017-02-06",
+    "description": "Apache Spark is the first choice tool for dealing with large data sets for many people. It is very popular among data scientists, in particular, due to its simple and elegant machine learning API. However, though it is very easy to train and cross-validate machine learning models on Spark, deploying models, e.g. as RESTful API services, is not trivial."
+  },
+  {
+    "title": "How to Set Up a Deep Learning Environment on AWS with Keras/Theano",
+    "url": "https://towardsdatascience.com/how-to-set-up-a-deep-learning-environment-on-aws-with-keras-theano-b0f39e3d861c",
+    "image_file": "logo_towards_data_science.jpg",
+    "date": "2016-12-22",
+    "description": "In this article, I’ll explain step by step how to set up a deep learning environment running on Amazon’s EC2 GPU instance."
+  },
+  {
+    "title": "Face Detection on Cloud Foundry",
+    "url": "https://medium.com/@datitran/face-detection-on-cloud-foundry-37887631096a",
+    "image_file": "logo_medium.png",
+    "date": "2016-12-07",
+    "description": "In this article, we explained how we deployed a simple face detection web app using OpenCV on Cloud Foundry (CF)."
+  },
+  {
+    "title": "Quickstart PySpark with Anaconda on AWS",
+    "url": "https://medium.com/@datitran/quickstart-pyspark-with-anaconda-on-aws-660252b88c9a",
+    "image_file": "logo_medium.png",
+    "date": "2016-11-08",
+    "description": "In this post, I want to describe step by step how to bootstrap PySpark with Anaconda on AWS using boto3."
+  },
+  {
+    "title": "Delivery in a Land with No Postcodes",
+    "url": "https://medium.com/actionable-data/delivery-in-a-land-with-no-postcodes-10e063ceb824",
+    "image_file": "logo_pivotal.jpg",
+    "date": "2016-11-03",
+    "description": "Have you ever taken a taxi in the Arab world? Specifying a postcode won’t help you much. Instead you have to provide a more detailed description of the location where you want to head to, for example, the supermarket next to the post office or the fourth house around X roundabout. Imagine being a logistic company operating in this part of the world trying to deliver packages. Operationalizing can get quite tricky without postcodes and relying on location descriptions instead."
+  },
+  {
+    "title": "How Automakers And The Internet Of Things Are Colliding To Save Lives",
+    "url": "https://content.pivotal.io/blog/how-automakers-and-the-internet-of-things-are-colliding-to-save-lives",
+    "image_file": "logo_pivotal.jpg",
+    "date": "2016-10-24",
+    "description": "In this article, I will demonstrate how we are helping one of the largest German car manufacturer to build a scalable IoT platform that uses weather data and data from other cars to warn drivers of dangerous conditions. Aside from the technology, I will also explain the data science involved in this project."
   },
   {
     "title": "Test-Driven Development for Data Science",

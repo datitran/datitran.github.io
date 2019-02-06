@@ -15,7 +15,7 @@ class Posts extends React.Component {
             return (
               <Media key={i}>
                 <Media left top href={post.url}>
-                  <img src={require('../../static/' + post.image_file)} alt={post.title}/>
+                  <img className='posts__image' src={require('../../static/' + post.image_file)} alt={post.title}/>
                 </Media>
                 <Media body>
                   <Media heading>
