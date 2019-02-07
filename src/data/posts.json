@@ -11,7 +11,7 @@
     "url": "https://devblogs.nvidia.com/deep-learning-hotel-aesthetics-photos/",
     "image_file": "logo_nvidia.png",
     "date": "2018-10-30",
-    "description": "At idealo.de we trained two Deep Neural Networks to assess the aesthetic and technical quality of images."
+    "description": "At idealo.de we trained two Deep Neural Networks to assess the aesthetic and technical quality of images. Joint work with Christopher Lennan."
   },
   {
     "title": "Falcon vs. Flask — Which one to pick to create a scalable deep learning REST API",
@@ -46,7 +46,7 @@
     "url": "https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9",
     "image_file": "logo_towards_data_science.jpg",
     "date": "2017-07-28",
-    "description": "This is a follow-up post on “Building a Real-Time Object Recognition App with Tensorflow and OpenCV” where I focus on training my own classes. Specifically, I trained my own Raccoon detector on a dataset that I collected and labeled by myself. The full dataset is available on my Github repo."
+    "description": "This is a follow-up post on “Building a Real-Time Object Recognition App with Tensorflow and OpenCV” where I focus on training my own classes. Specifically, I trained my own Raccoon detector on a dataset that I collected and labeled by myself."
   },
   {
     "title": "My two cents on what makes a good data scientist nowadays?",
@@ -67,7 +67,7 @@
     "url": "https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32",
     "image_file": "logo_towards_data_science.jpg",
     "date": "2017-06-22",
-    "description": "In this article, I will walk through the steps how you can easily build your own real-time object recognition application with Tensorflow’s (TF) new Object Detection API and OpenCV in Python 3 (specifically 3.5). The focus will be on the challenges that I faced when building it. You can find the full code on my repo."
+    "description": "In this article, I will walk through the steps how you can easily build your own real-time object recognition application with Tensorflow’s new Object Detection API and OpenCV in Python 3 (specifically 3.5)."
   },
   {
     "title": "Using Docker to Set Up a Deep Learning Environment on AWS",
@@ -78,10 +78,10 @@
   },
   {
     "title": "Scoring at Scale with Keras and TensorFlow on Greenplum",
-    "url": "http://engineering.pivotal.io/post/continuous-integration-for-data-science/",
+    "url": "http://engineering.pivotal.io/post/scoring-at-scale-with-keras-and-tensorflow-on-pivotal-greenplum/",
     "image_file": "logo_pivotal.jpg",
     "date": "2017-05-04",
-    "description": "How to train a deep neural network with Keras and TensorFlow and then apply it for scoring on Greenplum."
+    "description": "How to train a deep neural network with Keras and TensorFlow and then apply it for scoring on Greenplum. Joint work with Kyle Dunn."
   },
   {
     "title": "8 “Simple” Guidelines For Data Projects",
@@ -99,58 +99,58 @@
   },
   {
     "title": "Operationalizing PySpark Data Science Models on Pivotal Cloud Foundry",
-    "url": "http://engineering.pivotal.io/post/continuous-integration-for-data-science/",
+    "url": "https://content.pivotal.io/blog/operationalizing-pyspark-data-science-models-on-pivotal-cloud-foundry",
     "image_file": "logo_pivotal.jpg",
     "date": "2017-02-06",
-    "description": "Apache Spark is the first choice tool for dealing with large data sets for many people. It is very popular among data scientists, in particular, due to its simple and elegant machine learning API. However, though it is very easy to train and cross-validate machine learning models on Spark, deploying models, e.g. as RESTful API services, is not trivial."
+    "description": "Demonstration of the Cloud Foundry buildpack for PySpark applications, in particular, to deploy a machine learning model trained in Spark. Joint work with Andreas Fleig."
   },
   {
     "title": "How to Set Up a Deep Learning Environment on AWS with Keras/Theano",
     "url": "https://towardsdatascience.com/how-to-set-up-a-deep-learning-environment-on-aws-with-keras-theano-b0f39e3d861c",
     "image_file": "logo_towards_data_science.jpg",
     "date": "2016-12-22",
-    "description": "In this article, I’ll explain step by step how to set up a deep learning environment running on Amazon’s EC2 GPU instance."
+    "description": "Step by step tutorial on how to set up a deep learning environment running on Amazon’s EC2 GPU instances."
   },
   {
     "title": "Face Detection on Cloud Foundry",
     "url": "https://medium.com/@datitran/face-detection-on-cloud-foundry-37887631096a",
     "image_file": "logo_medium.png",
     "date": "2016-12-07",
-    "description": "In this article, we explained how we deployed a simple face detection web app using OpenCV on Cloud Foundry (CF)."
+    "description": "Deployment of a simple face detection web app using OpenCV on Cloud Foundry. Joint work with Andreas Fleig."
   },
   {
     "title": "Quickstart PySpark with Anaconda on AWS",
     "url": "https://medium.com/@datitran/quickstart-pyspark-with-anaconda-on-aws-660252b88c9a",
     "image_file": "logo_medium.png",
     "date": "2016-11-08",
-    "description": "In this post, I want to describe step by step how to bootstrap PySpark with Anaconda on AWS using boto3."
+    "description": "Step by step tutorial on how to bootstrap PySpark with Anaconda on AWS using boto3."
   },
   {
     "title": "Delivery in a Land with No Postcodes",
     "url": "https://medium.com/actionable-data/delivery-in-a-land-with-no-postcodes-10e063ceb824",
-    "image_file": "logo_pivotal.jpg",
+    "image_file": "logo_actionable_data.png",
     "date": "2016-11-03",
-    "description": "Have you ever taken a taxi in the Arab world? Specifying a postcode won’t help you much. Instead you have to provide a more detailed description of the location where you want to head to, for example, the supermarket next to the post office or the fourth house around X roundabout. Imagine being a logistic company operating in this part of the world trying to deliver packages. Operationalizing can get quite tricky without postcodes and relying on location descriptions instead."
+    "description": "Automating the delivery location confirmation process with the help of machine learning for a logistic company operating in the Arab world where specifying a postcode won’t help much."
   },
   {
     "title": "How Automakers And The Internet Of Things Are Colliding To Save Lives",
     "url": "https://content.pivotal.io/blog/how-automakers-and-the-internet-of-things-are-colliding-to-save-lives",
     "image_file": "logo_pivotal.jpg",
     "date": "2016-10-24",
-    "description": "In this article, I will demonstrate how we are helping one of the largest German car manufacturer to build a scalable IoT platform that uses weather data and data from other cars to warn drivers of dangerous conditions. Aside from the technology, I will also explain the data science involved in this project."
+    "description": "Building a scalable IoT platform for one of the largest German car manufacturer that uses weather data and data from other cars to warn drivers of dangerous conditions."
   },
   {
     "title": "Test-Driven Development for Data Science",
     "url": "http://engineering.pivotal.io/post/test-driven-development-for-data-science/",
     "image_file": "logo_pivotal.jpg",
     "date": "2016-09-15",
-    "description": "Unravelling Test-Driven Development for Data Science."
+    "description": "Unravelling Test-Driven Development for Data Science. Joint work with Megha Agarwal."
   },
   {
     "title": "API First for Data Science",
     "url": "http://engineering.pivotal.io/post/api-first-for-data-science/",
     "image_file": "logo_pivotal.jpg",
     "date": "2016-07-29",
-    "description": "How API first can help to create smart data-driven apps."
+    "description": "How API first can help to create smart data-driven apps. Joint work with Alicia Bozyk."
   }
 ]
