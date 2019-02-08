@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.home {
+    &__row {
+        @media screen
+          and (min-width: 600px)
+        {
+          margin-top: 1rem;
+        }
+    }
+}
