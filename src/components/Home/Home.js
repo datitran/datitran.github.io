@@ -26,7 +26,7 @@ class Home extends React.Component {
                 <CardTitle>Face2face — A Pix2Pix demo that mimics the facial expression of the German chancellor.</CardTitle>
               </CardBody>
             </Card>
-            </CardDeck>
+          </CardDeck>
         </Col>
       </Row>
       </Container>;
