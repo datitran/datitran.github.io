@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Slider } from 'react-burgers'
 import profilePic from '../../static/dat.jpg';
 import './Navigation.scss';
 
@@ -27,7 +28,12 @@ class Navigation extends React.Component {
             <img src={profilePic} className='profile-pic' alt='Dat Tran'/>
             <span>Dat Tran</span>
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggle}/>
+          <Slider className='navbar-toggler'
+                  width={34}
+                  padding='0px'
+                  color='#fff'
+                  active={this.state.isOpen}
+                  onClick={this.toggle}/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem>
