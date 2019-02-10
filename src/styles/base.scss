@@ -81,3 +81,31 @@ h2.sectionHeading {
 button:focus {
   outline: none;
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (orientation: landscape) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (orientation: landscape) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (orientation: landscape) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (orientation: landscape) {
+    .container {
+        max-width: 1140px;
+    }
+}
