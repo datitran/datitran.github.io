@@ -19,7 +19,7 @@ class Posts extends React.Component {
                 </Media>
                 <Media body>
                   <Media heading>
-                    <a href={post.url} target='_blank'>{post.title}</a>
+                    <a href={post.url} target='_blank' rel='noreferrer noopener'>{post.title}</a>
                     <span className='jobTotalDuration'>{moment(post.date).format('YYYY, MMM Do')}</span>
                   </Media>
                   <i className='posts__color'>{post.description}</i>

@@ -19,7 +19,7 @@ class Talks extends React.Component {
                 </Media>
                 <Media body>
                   <Media heading>
-                    <a href={talk.url} target='_blank'>{talk.title}</a>
+                    <a href={talk.url} target='_blank' rel='noreferrer noopener'>{talk.title}</a>
                     <span className='jobTotalDuration'>{moment(talk.date).format('YYYY, MMM Do')}</span>
                   </Media>
                   <i className='talks__color'>{talk.description}</i>

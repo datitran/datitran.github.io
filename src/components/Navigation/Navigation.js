@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {Container, Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Slider } from 'react-burgers'
 import profilePic from '../../static/dat.jpg';
 import './Navigation.scss';

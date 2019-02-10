@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, CardDeck, Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Container, Row, Col, CardDeck, Card, CardImg, CardBody, CardTitle } from 'reactstrap';
 import ProgressiveImage from 'react-progressive-image';
 import './Home.scss';
 import imageOne from '../../static/object_detection.jpg';
