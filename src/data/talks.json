@@ -21,6 +21,13 @@
     "description": "Machine Learning @ idealo. Joint talk with Christopher Lennan."
   },
   {
+    "title": "Venturi’s Voice Podcast",
+    "url": "https://www.venturi-group.com/us/podcast/finding-hiring-data-science-rockstars-dat-tran/",
+    "image_file": "logo_venturi.jpg",
+    "date": "2018-06-07",
+    "description": "Finding and hiring data science rockstars."
+  },
+  {
     "title": "Data Festival 2018",
     "url": "https://www.datafestival.de/en/how-lean-can-big-data-be-dat-tran-presents-mvp-approach/",
     "image_file": "logo_datafestival.jpg",
