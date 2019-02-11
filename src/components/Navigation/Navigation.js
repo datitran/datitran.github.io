@@ -22,7 +22,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <Navbar className='navigation__navbar' dark expand='md' fixed='top'>
+      <Navbar className='navigation__navbar' dark expand='lg' fixed='top'>
         <Container>
           <NavbarBrand href='/'>
             <img src={profilePic} className='profile-pic' alt='Dat Tran'/>
