@@ -25,8 +25,12 @@
             }
         }
 
-        @media screen and (max-width: 750px) {
-            width: 100%;
+        @media (min-width: 992px) {
+                min-width: 200px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 80%;
         }
 
         @media screen and (max-width : 500px) {
