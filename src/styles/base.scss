@@ -89,10 +89,29 @@ button:focus {
     }
 }
 
+@media (min-width: 577px) and (max-width: 767px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (orientation: landscape) {
     .container {
-        max-width: 800px;
+        max-width: 770px;
+    }
+}
+
+// Optimize breakpoints for Pixel 2 XL, iPhone X
+@media (min-width: 769px) and (max-width: 823px) {
+    .container {
+        max-width: 770px;
+    }
+}
+
+@media (min-width: 824px) and (max-width: 991px) {
+    .container {
+        max-width: 900px;
     }
 }
 
@@ -100,12 +119,6 @@ button:focus {
 @media (min-width: 992px) and (orientation: landscape) {
     .container {
         max-width: 960px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        max-width: 920px;
     }
 }
 
