@@ -9,9 +9,7 @@ branches:
   - develop
   except:
   - master
-script:
-- yarn install
-- yarn run build
+script: build.sh
 deploy:
   provider: pages
   skip_cleanup: true
