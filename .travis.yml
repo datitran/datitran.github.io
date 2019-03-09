@@ -9,7 +9,8 @@ branches:
   - develop
   except:
   - master
-script: build.sh
+script:
+  - bash ./build.sh
 deploy:
   provider: pages
   skip_cleanup: true
