@@ -30,6 +30,36 @@ export default [
         "language": "python"
     },
     {
+        "title": "image-quality-assessment",
+        "description": "Convolutional Neural Networks to predict the aesthetic and technical quality of images.",
+        "videoUrl": "",
+        "ownerId": "idealo",
+        "ownerUrl": "",
+        "ownerLogo": "tensorflow",
+        "projectId": "image-quality-assessment",
+        "language": "python"
+    },
+    {
+        "title": "image-super-resolution",
+        "description": "Super-scale your images and run experiments with Residual Dense and Adversarial Networks.",
+        "videoUrl": "",
+        "ownerId": "idealo",
+        "ownerUrl": "",
+        "ownerLogo": "tensorflow",
+        "projectId": "image-super-resolution",
+        "language": "python"
+    },
+    {
+        "title": "imageatm",
+        "description": "Image classification for everyone.",
+        "videoUrl": "",
+        "ownerId": "idealo",
+        "ownerUrl": "",
+        "ownerLogo": "tensorflow",
+        "projectId": "imageatm",
+        "language": "python"
+    },
+    {
         "title": "terraform-emr-pyspark",
         "description": "Quickstart PySpark with Anaconda on AWS/EMR using Terraform.",
         "videoUrl": "",

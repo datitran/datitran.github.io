@@ -1,5 +1,26 @@
 [
   {
+    "title": "DataHack Radio (Analytics Vidhya)",
+    "url": "https://www.analyticsvidhya.com/blog/2019/04/datahack-radio-exploring-computer-vision-data-engineering-podcast-dat-tran/",
+    "image_file": "logo_datahack.jpg",
+    "date": "2019-04-25",
+    "description": "Exploring Computer Vision and Data Engineering with Dat Tran."
+  },
+  {
+    "title": "hub.berlin 2019",
+    "url": "https://www.hub.berlin/speaker/dat-tran",
+    "image_file": "logo_hub.jpg",
+    "date": "2019-04-10",
+    "description": "Automate the Boring Stuff with Machine Learning."
+  },
+  {
+    "title": "code.talks commerce 2019",
+    "url": "https://www.youtube.com/watch?v=Mc3dKwK1Y80&feature=youtu.be",
+    "image_file": "logo_codetalks.jpg",
+    "date": "2019-04-05",
+    "description": "AI Use Cases @ idealo."
+  },
+  {
     "title": "Data Natives 2018",
     "url": "https://www.slideshare.net/Dataconomy/dn18-demystifying-the-buzz-in-machine-learning-this-time-for-real-dat-tran-idealo",
     "image_file": "logo_datanatives.jpg",
