@@ -41,7 +41,7 @@ export default [
     },
     {
         "title": "image-super-resolution",
-        "description": "Super-scale your images and run experiments with Residual Dense and Adversarial Networks.",
+        "description": "🔎 Super-scale your images and run experiments with Residual Dense and Adversarial Networks.",
         "videoUrl": "",
         "ownerId": "idealo",
         "ownerUrl": "",
@@ -57,6 +57,26 @@ export default [
         "ownerUrl": "",
         "ownerLogo": "tensorflow",
         "projectId": "imageatm",
+        "language": "python"
+    },
+    {
+        "title": "imagededup",
+        "description": "😎 Finding duplicate images made easy!",
+        "videoUrl": "",
+        "ownerId": "idealo",
+        "ownerUrl": "",
+        "ownerLogo": "tensorflow",
+        "projectId": "imagededup",
+        "language": "python"
+    },
+    {
+        "title": "headliner",
+        "description": "📰 Generating headlines from news articles using seq2seq models.",
+        "videoUrl": "",
+        "ownerId": "as-ideas",
+        "ownerUrl": "",
+        "ownerLogo": "tensorflow",
+        "projectId": "headliner",
         "language": "python"
     },
     {
