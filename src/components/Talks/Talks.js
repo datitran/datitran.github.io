@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Row, Col, Media} from 'reactstrap';
 import moment from 'moment';
+import pdfFile from '../../static/CV.pdf'
 import talks from '../../data/talks';
 import './Talks.scss';
 
@@ -9,6 +10,7 @@ class Talks extends React.Component {
     return <Container>
       <Row>
         <Col>
+          <p>I regularly give talks from technical ones to keynotes on many diverse topics such as AI, technology, culture &amp; transformation. For a more detailed list of my talks, have a look at my <a href={pdfFile} className='talks__links'>CV</a>. If you want to book me write me an <a href='mailto:datitran@gmail.com' className='talks__links'>e-mail</a>.</p>
           <h2 className='sectionHeading projects__heading'>Talks</h2>
           {talks.map(function (talk, i) {
             moment.locale('en');

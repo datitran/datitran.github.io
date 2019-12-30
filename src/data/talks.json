@@ -1,5 +1,26 @@
 [
   {
+    "title": "EGG Germany 2019",
+    "url": "https://youtu.be/xtEtZnOpjpc",
+    "image_file": "logo_dataiku.jpg",
+    "date": "2019-11-21",
+    "description": "Keynote Talk: From ML Research to Production - the Autobahn Way!."
+  },
+  {
+    "title": "AI in Action",
+    "url": "https://alldus.com/blog/podcasts/ai-in-action-e50-dat-tran-head-of-ai-at-axel-springer/",
+    "image_file": "logo_alldus.jpg",
+    "date": "2019-10-17",
+    "description": "In the landmark episode 50 of AI in Action, host Anthony Kelly speaks with Dat Tran, Head of AI at Axel Springer in Berlin. In the episode, they talked about building successful data science team and what the benefits are that Applied AI and Data Science bring to customers. Dat also talked about himself, his career and how AI affects Axel Springer."
+  },
+  {
+    "title": "I.E.C.T. Summer School 2019",
+    "url": "https://www.derbrutkasten.com/ki-ai-hermann-hauser/",
+    "image_file": "logo_iect.jpg",
+    "date": "2019-08-16",
+    "description": "Keynote Talk and Panelist."
+  },
+  {
     "title": "ODSC India 2019",
     "url": "https://youtu.be/A1nUYywtswY",
     "image_file": "logo_odsc.png",
