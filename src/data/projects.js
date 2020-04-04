@@ -70,6 +70,16 @@ export default [
         "language": "python"
     },
     {
+        "title": "ForwardTacotron",
+        "description": "⏩ Generating speech in a single forward pass without any attention!",
+        "videoUrl": "",
+        "ownerId": "as-ideas",
+        "ownerUrl": "",
+        "ownerLogo": "pytorch",
+        "projectId": "forwardtacotron",
+        "language": "python"
+    },
+    {
         "title": "headliner",
         "description": "📰 Generating headlines from news articles using seq2seq models.",
         "videoUrl": "",

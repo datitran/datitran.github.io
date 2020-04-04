@@ -1,5 +1,19 @@
 [
   {
+    "title": "mindsnack - der Axel Springer Learning Podcast",
+    "url": "https://soundcloud.com/mindsnack/demystifying-ai-dat-tran",
+    "image_file": "logo_mindsnack.jpg",
+    "date": "2020-01-30",
+    "description": "Demystifying AI - Was ist eigentlich diese Künstliche Intelligenz?"
+  },
+  {
+    "title": "WeAreDevelopers Congress Vienna 2019",
+    "url": "https://youtu.be/-iT21IY5Srs",
+    "image_file": "logo_wearedevelopers.jpg",
+    "date": "2019-11-29",
+    "description": "Training a Machine to See What’s Beautiful (esp. for Hotel Photos)"
+  },
+  {
     "title": "EGG Germany 2019",
     "url": "https://youtu.be/xtEtZnOpjpc",
     "image_file": "logo_dataiku.jpg",
