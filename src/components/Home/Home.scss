@@ -8,4 +8,15 @@
           margin-top: 1rem;
         }
     }
+
+    &__links {
+        text-decoration: underline;
+        text-decoration-color: red;
+
+        &:hover {
+            color: red;
+            text-decoration: underline;
+            text-decoration-color: red;
+            }
+    }
 }

@@ -20,7 +20,7 @@ class Home extends React.Component {
     return <Container>
       <h2 className='sectionHeading projects__heading'>Welcome!</h2>
       <br></br>
-      I'm Dat. This is my personal homepage. I work in the intersection between humans and machines.
+      This is my personal homepage. I work in the intersection between humans and machines. Feel free to contact me at <a href="mailto:hello@dat-tran.com"  className='home__links'>hello@dat-tran.com</a> for work-related inquiries.
       <br></br>
       <br></br>
       <Row>
