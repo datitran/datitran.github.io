@@ -32,7 +32,7 @@ export default (props) => {
     <Container>
         <h2 className='sectionHeading projects__heading'>Projects</h2>
         <br></br>
-        I've worked in and managed many industry, research and open-source projects over the years. Here's a list of some of the projects that I've been working on.
+        I've worked on and managed many industry, research and open-source projects over the years. From strategy, ideation to the actual implementation. Here's a list of some of the projects that I've been working on.
         <br></br>
         <br></br>
         <h3>Industry</h3>
@@ -57,7 +57,7 @@ export default (props) => {
                   <CardTitle>Computer Vision.</CardTitle>
                   <CardText>
                     <ul>
-                      <li>Used deep learning to automatically rank millions of hotel images (300+ million) at hotel.idealo.de according to their aesthetic and technical quality which helped to improve the listing for small and mid-sized hotels</li>
+                      <li>Used deep learning to automatically rank millions of hotel images (300+ million) at <a href='https://hotel.idealo.de/' className='projects__links' target='_blank' rel='noreferrer noopener'>hotel.idealo.de</a> according to their aesthetic and technical quality which helped to improve the listing for small and mid-sized hotels</li>
                       <li>Trained CNNs to automatically generate nice looing product galleries which reduced the workflow time of idealo's content team by 75%</li>
                     </ul>
                   </CardText>
@@ -80,7 +80,7 @@ export default (props) => {
                   <CardTitle>CRM.</CardTitle>
                   <CardText>
                     <ul>
-                      <li>I concepted and set up the data engineering flow with Apache Nifi to automate idealo's CRM workflow which resulted 1m EUR in the 1st year, 2m in the 2nd year and 3m in the 3rd year</li>
+                      <li>I concepted and set up the data engineering flow with Apache Nifi to automate idealo's CRM workflow which resulted €1m in the 1st year, €2m in the 2nd year and €3m in the 3rd year</li>
                       <li>My team built a tree-based classifier to predict non-purchases of customers which helped idealo's CRM team to target those customers three days ahead before we receive the actual sales data by the shops</li>
                     </ul>
                   </CardText>
@@ -109,9 +109,10 @@ export default (props) => {
                   <CardTitle>(Tech) Transformation.</CardTitle>
                   <CardText>
                     <ul>
-                      <li>Established and managed the Axel Springer Tech Blog and also idealo's Tech Blog</li>
-                      <li>Ideated and co-organized the Axel Springer TechCon 2019 which was the first group-wide conference within the group</li>
+                      <li>Established and managed the <a href='https://medium.com/axel-springer-tech' className='projects__links' target='_blank' rel='noreferrer noopener'>Axel Springer Tech Blog</a> and also <a href='https://medium.com/idealo-tech-blog' className='projects__links' target='_blank' rel='noreferrer noopener'>idealo's Tech Blog</a></li>
+                      <li>Devised and co-organized the <a href='https://youtu.be/9uYlYCUgHes' className='projects__links' target='_blank' rel='noreferrer noopener'>Axel Springer TechCon 2019</a> which was the first group-wide conference within the group</li>
                       <li>I was the face of the new employer branding for technology within the Axel Springer group</li>
+                      <li>Introduced and evangelized extreme programming pratices (e.g. pair programming, TDD, balanced teams etc.) and also lean product development</li>
                     </ul>
                   </CardText>
                 </CardBody>
@@ -133,8 +134,13 @@ export default (props) => {
                   <CardTitle>Readaloud.</CardTitle>
                   <CardText>
                     <ul>
-                      <li>Developed a text-to-speech systen to synthesize Welt.de articles</li>
+                      <li>Developed a text-to-speech (TTS) system to synthesize <a href='https://www.welt.de/' className='projects__links' target='_blank' rel='noreferrer noopener'>Welt.de</a> articles</li>
                       <li>Managed R&D directions of the team and also guided product development</li>
+                      <li>We also open-sourced several TTS models:</li>
+                        <ul>
+                          <li><a href='https://github.com/as-ideas/TransformerTTS' className='projects__links' target='_blank' rel='noreferrer noopener'>TransformerTTS</a> - Implementation of a non-autoregressive Transformer based neural network for text to speech</li>
+                          <li><a href='https://github.com/as-ideas/ForwardTacotron' className='projects__links' target='_blank' rel='noreferrer noopener'>ForwardTacotron</a> - Generating speech in a single forward pass without any attention</li>
+                        </ul>
                       <li>The MVP went life after 5 months</li>
                     </ul>
                   </CardText>
