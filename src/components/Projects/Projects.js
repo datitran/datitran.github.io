@@ -32,7 +32,7 @@ export default (props) => {
     <Container>
         <h2 className='sectionHeading projects__heading'>Projects</h2>
         <br></br>
-        I've worked on and managed many industry, research and open-source projects over the years. From strategy, ideation to the actual implementation. Here's a list of some of the projects that I've been working on.
+        Over the years, I've worked on, managed and led many industry, research and open-source projects across different domains and stages: from the strategy side, ideation to the actual implementation. I was literally in touch with every part of modern software development. Here's a list of some of the projects that I've been working on. Feel free to reach out if you would like to work with me.
         <br></br>
         <br></br>
         <h3>Industry</h3>
@@ -112,7 +112,7 @@ export default (props) => {
                       <li>Established and managed the <a href='https://medium.com/axel-springer-tech' className='projects__links' target='_blank' rel='noreferrer noopener'>Axel Springer Tech Blog</a> and also <a href='https://medium.com/idealo-tech-blog' className='projects__links' target='_blank' rel='noreferrer noopener'>idealo's Tech Blog</a></li>
                       <li>Devised and co-organized the <a href='https://youtu.be/9uYlYCUgHes' className='projects__links' target='_blank' rel='noreferrer noopener'>Axel Springer TechCon 2019</a> which was the first group-wide conference within the group</li>
                       <li>I was the face of the new employer branding for technology within the Axel Springer group</li>
-                      <li>Introduced and evangelized extreme programming pratices (e.g. pair programming, TDD, balanced teams etc.) and also lean product development</li>
+                      <li>Introduced and evangelized extreme programming practices (e.g. pair programming, TDD, balanced teams etc.) and also lean product development</li>
                     </ul>
                   </CardText>
                 </CardBody>
