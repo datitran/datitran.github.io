@@ -10,6 +10,7 @@ class Posts extends React.Component {
       <Row>
         <Col>
           <h2 className='sectionHeading projects__heading'>Posts</h2>
+          <p>I mostly write about tech-related topics from very deep technical articles to business & product use cases involving technology. Moreover, I also provide thought leadership in areas such as AI, culture and technology in general. Below you can find some of my publications.</p>
           {posts.map(function (post, i) {
             moment.locale('en');
             return (
