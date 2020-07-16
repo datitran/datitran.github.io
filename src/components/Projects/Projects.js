@@ -9,6 +9,10 @@ import imageThree from '../../static/employer_branding_dat_tran.jpg';
 import imageThreeSmall from '../../static/tiny_image/employer_branding_dat_tran_tn.jpg';
 import imageFour from '../../static/readaloud_welt.jpg';
 import imageFourSmall from '../../static/tiny_image/readaloud_welt_tn.jpg';
+import imageFive from '../../static/leadership_dat_tran.jpg';
+import imageFiveSmall from '../../static/tiny_image/leadership_dat_tran_tn.jpg';
+import imageSix from '../../static/idealo_team_photo.jpg';
+import imageSixSmall from '../../static/tiny_image/idealo_team_photo_tn.jpg';
 
 import './Projects.scss';
 
@@ -32,7 +36,7 @@ export default (props) => {
     <Container>
         <h2 className='sectionHeading projects__heading'>Projects</h2>
         <br></br>
-        Over the years, I've worked on, managed and led many industry, research and open-source projects across different domains and stages: from the strategy side, ideation to the actual implementation. I was literally in touch with every part of modern software development. Here's a list of some of the projects that I've been working on. Feel free to reach out if you would like to work with me.
+        Over the years, I've worked on, managed and led many industry, research and open-source projects across different domains and stages: from the strategy side, ideation to the actual implementation. I was literally in touch with every part of modern software development. Here's a list of some of the projects that I've been working on but also just stuff that I do. Feel free to reach out if you would like to work with me.
         <br></br>
         <br></br>
         <h3>Industry</h3>
@@ -142,6 +146,59 @@ export default (props) => {
                           <li><a href='https://github.com/as-ideas/ForwardTacotron' className='projects__links' target='_blank' rel='noreferrer noopener'>ForwardTacotron</a> - Generating speech in a single forward pass without any attention</li>
                         </ul>
                       <li>The MVP went life after 5 months</li>
+                    </ul>
+                  </CardText>
+                </CardBody>
+              </Card>
+            </CardDeck>
+          </Col>
+        </Row>
+        <Row className='home__row'>
+          <Col>
+            <CardDeck>
+              <Card className='border-0'>
+                <ProgressiveImage src={imageFive} placeholder={imageFiveSmall}>
+                  {src => {
+                    return (
+                      <div>
+                        <CardImg className='progressive-image' src={src} alt='Leadership.'/>
+                        <noscript>
+                          <CardImg className='progressive-image no-script' src={imageFive} alt='Leadership.'/>
+                        </noscript>
+                      </div>
+                    );
+                  }}
+                </ProgressiveImage>
+                <CardBody>
+                  <CardTitle>Leadership.</CardTitle>
+                  <CardText>
+                    <ul>
+                      <li>Co-head of idealo's data team as Head of Product where I grew the unit together with the Head of Technology from 12 to 25 employees in the 1st year and personally hired 6 people within 9 months</li>
+                      <li>Led the AI efforts for <a href='https://www.axelspringer.com/' className='projects__links' target='_blank' rel='noreferrer noopener'>Axel Springer SE</a> as Head of AI on a group level with the mission to turn the company into an "AI-first" company</li>
+                      <li>Provided thought leadership for many topics such as AI, culture, technology and also product development</li>
+                    </ul>
+                  </CardText>
+                </CardBody>
+              </Card>
+              <Card className='border-0'>
+                <ProgressiveImage src={imageSix} placeholder={imageSixSmall}>
+                  {src => {
+                    return (
+                      <div>
+                        <CardImg className='progressive-image' src={src} alt='Mentoring.'/>
+                        <noscript>
+                          <CardImg className='progressive-image no-script' src={imageSix} alt='Mentoring.'/>
+                        </noscript>
+                      </div>
+                    );
+                  }}
+                </ProgressiveImage>
+                <CardBody>
+                  <CardTitle>Mentoring.</CardTitle>
+                  <CardText>
+                    <ul>
+                      <li>Introduced individual career development plans with weekly 1:1s which helped my employees to progress much faster in their career and also more goal-oriented</li>
+                      <li>Mentored several students successfully from (online) courses such as <a href='https://www.springboard.com/' className='projects__links' target='_blank' rel='noreferrer noopener'>Springboard</a></li>
                     </ul>
                   </CardText>
                 </CardBody>
