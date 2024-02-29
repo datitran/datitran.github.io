@@ -11,10 +11,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10' # Specify your Node.js version
-    - name: Install Dependencies
-      run: npm install
-    - name: Build
-      run: npm run build
+    - name: Install Dependencies and Build
+      run: ./build.sh
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
