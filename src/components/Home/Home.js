@@ -20,8 +20,16 @@ class Home extends React.Component {
     return <Container>
       <h2 className='sectionHeading projects__heading'>Welcome!</h2>
       <br></br>
-      This is my personal homepage. I work in the intersection between humans and machines. Feel free to contact me at <a href="mailto:hello@dat-tran.com"  className='home__links'>hello@dat-tran.com</a> for work-related inquiries.
+      This is my personal homepage. I work in the intersection between humans and machines. Feel free to contact me at <a href="mailto:hello@dat-tran.com" className='home__links'>hello@dat-tran.com</a> for work-related inquiries.
       <br></br>
+      <br></br>
+      <p>I offer services in:</p>
+      <ul>
+        <li>Tech due diligence (I check code quality, do architectural review, review your tech stack and roadmap)</li>
+        <li>Keynote talks (introductory AI talks for both technical and non-technical audience, topics range from Generative AI to old boring ML)</li>
+        <li>Discovery and strategy workshops (I help you explore AI use cases tailored to your needs and rank them according to business value)</li>
+        <li>Sparring Partner (Due to my wide range of experiences, I can be a sparring partner for your team for both higher level management and also working level)</li>
+      </ul>
       <br></br>
       <Row>
         <Col>
@@ -32,9 +40,9 @@ class Home extends React.Component {
                   {src => {
                     return (
                       <div>
-                        <CardImg className='progressive-image' src={src} alt='Object Detection.'/>
+                        <CardImg className='progressive-image' src={src} alt='Object Detection.' />
                         <noscript>
-                          <CardImg className='progressive-image no-script' src={imageOne} alt='Object Detection.'/>
+                          <CardImg className='progressive-image no-script' src={imageOne} alt='Object Detection.' />
                         </noscript>
                       </div>
                     );
@@ -51,9 +59,9 @@ class Home extends React.Component {
                   {src => {
                     return (
                       <div>
-                        <CardImg className='progressive-image' src={src} alt='Face2face Demo.'/>
+                        <CardImg className='progressive-image' src={src} alt='Face2face Demo.' />
                         <noscript>
-                          <CardImg className='progressive-image no-script' src={imageTwo} alt='Face2face Demo.'/>
+                          <CardImg className='progressive-image no-script' src={imageTwo} alt='Face2face Demo.' />
                         </noscript>
                       </div>
                     );
@@ -76,9 +84,9 @@ class Home extends React.Component {
                   {src => {
                     return (
                       <div>
-                        <CardImg className='progressive-image' src={src} alt='Handwritten Digit Recognition.'/>
+                        <CardImg className='progressive-image' src={src} alt='Handwritten Digit Recognition.' />
                         <noscript>
-                          <CardImg className='progressive-image no-script' src={imageThree} alt='Handwritten Digit Recognition.'/>
+                          <CardImg className='progressive-image no-script' src={imageThree} alt='Handwritten Digit Recognition.' />
                         </noscript>
                       </div>
                     );
@@ -95,9 +103,9 @@ class Home extends React.Component {
                   {src => {
                     return (
                       <div>
-                        <CardImg className='progressive-image' src={src} alt='Raccoon Detector.'/>
+                        <CardImg className='progressive-image' src={src} alt='Raccoon Detector.' />
                         <noscript>
-                          <CardImg className='progressive-image no-script' src={imageFour} alt='Raccoon Detector.'/>
+                          <CardImg className='progressive-image no-script' src={imageFour} alt='Raccoon Detector.' />
                         </noscript>
                       </div>
                     );
@@ -120,9 +128,9 @@ class Home extends React.Component {
                   {src => {
                     return (
                       <div>
-                        <CardImg className='progressive-image' src={src} alt='Deep Learning for Classifying Hotel Aesthetics Photos.'/>
+                        <CardImg className='progressive-image' src={src} alt='Deep Learning for Classifying Hotel Aesthetics Photos.' />
                         <noscript>
-                          <CardImg className='progressive-image no-script' src={imageFive} alt='Deep Learning for Classifying Hotel Aesthetics Photos.'/>
+                          <CardImg className='progressive-image no-script' src={imageFive} alt='Deep Learning for Classifying Hotel Aesthetics Photos.' />
                         </noscript>
                       </div>
                     );
@@ -139,9 +147,9 @@ class Home extends React.Component {
                   {src => {
                     return (
                       <div>
-                        <CardImg className='progressive-image' src={src} alt='Jupyter Notebook and reveal.js.'/>
+                        <CardImg className='progressive-image' src={src} alt='Jupyter Notebook and reveal.js.' />
                         <noscript>
-                          <CardImg className='progressive-image no-script' src={imageSix} alt='Jupyter Notebook and reveal.js.'/>
+                          <CardImg className='progressive-image no-script' src={imageSix} alt='Jupyter Notebook and reveal.js.' />
                         </noscript>
                       </div>
                     );
@@ -155,7 +163,7 @@ class Home extends React.Component {
           </CardDeck>
         </Col>
       </Row>
-      </Container>;
+    </Container>;
   }
 }
 
