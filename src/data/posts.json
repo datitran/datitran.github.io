@@ -1,5 +1,12 @@
 [
   {
+    "title": "Creating Robust Neural Speech Synthesis with ForwardTacotron",
+    "url": "https://developer.nvidia.com/blog/creating-robust-neural-speech-synthesis-with-forwardtacotron/",
+    "image_file": "logo_nvidia.png",
+    "date": "2020-08-06",
+    "description": "Explaining how we trained our text-to-speech model to create a custom brand voice for Axel Springer, Europe’s largest digital publisher. Joint work with Dr. Christian Schäfer."
+  },
+  {
     "title": "Using Terraform to Quick Start PySpark on AWS",
     "url": "https://medium.com/idealo-tech-blog/using-terraform-to-quick-start-pyspark-on-aws-2bc8ce9dcac",
     "image_file": "logo_idealotech.jpg",

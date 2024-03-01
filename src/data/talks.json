@@ -1,5 +1,33 @@
 [
   {
+    "title": "Beyond Coding Podcast",
+    "url": "https://youtu.be/5DbJhv7ikIk",
+    "image_file": "logo_beyond_coding.jpg",
+    "date": "2022-12-21",
+    "description": "Open Core, Pricing and AI product development"
+  },
+  {
+    "title": "Øredev Conference 2022",
+    "url": "https://youtu.be/d6FoKcFmYpA",
+    "image_file": "logo_oredev.jpg",
+    "date": "2022-12-05",
+    "description": "How to Implement a Production Ready Deep Learning Model in 12 Weeks"
+  },
+  {
+    "title": "DataTalks Club",
+    "url": "https://youtu.be/ScDIB-3O77A",
+    "image_file": "logo_dtc.jpg",
+    "date": "2020-12-04",
+    "description": "Building a Data Science Team"
+  },
+  {
+    "title": "NLP Zurich",
+    "url": "https://youtu.be/VUvUxzpjHWo",
+    "image_file": "logo_nlp_zurich.jpg",
+    "date": "2020-09-25",
+    "description": "The path to data science (@ NLP Zurich)"
+  },
+  {
     "title": "mindsnack - der Axel Springer Learning Podcast",
     "url": "https://soundcloud.com/mindsnack/demystifying-ai-dat-tran",
     "image_file": "logo_mindsnack.jpg",
