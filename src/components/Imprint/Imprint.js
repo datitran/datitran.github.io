@@ -12,7 +12,7 @@ class Imprint extends React.Component {
           <p>Dat Tran Ventures UG</p>
           <p>Hettnerweg 30</p>
           <p>13581 Berlin</p>
-          <p>Telephone Number: +49 151-2296-3660</p>
+          <p>Telephone Number: +49 151 2296-3660</p>
           <p>Email Address: hello@dat-tran.com</p>
 
           <h4>Represented by:</h4>

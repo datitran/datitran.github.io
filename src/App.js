@@ -11,6 +11,7 @@ import ProfileSummary from './components/ProfileSummary/ProfileSummary';
 import About from './components/About/About';
 import Home from './components/Home/Home';
 import Imprint from './components/Imprint/Imprint';
+import Privacy from './components/Privacy/Privacy'
 
 ReactGA.initialize('UA-133956643-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -30,6 +31,7 @@ class App extends Component {
             <Route path='/talks' component={Talks} />
             <Route path='/about' component={About} />
             <Route path='/imprint' component={Imprint} />
+            <Route path='/privacy' component={Privacy} />
             <Footer />
           </div>
         </Router>
