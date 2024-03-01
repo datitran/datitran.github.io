@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import ProfileSummary from './components/ProfileSummary/ProfileSummary';
 import About from './components/About/About';
 import Home from './components/Home/Home';
+import Imprint from './components/Imprint/Imprint';
 
 ReactGA.initialize('UA-133956643-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -20,15 +21,16 @@ class App extends Component {
       <div className='App'>
         <Router>
           <div>
-            <Navigation/>
-            <ProfileSummary/>
-            <Route exact={true} path='/' component={Home}/>
-            <Route path='/home' component={Home}/>
-            <Route path='/projects' component={Projects}/>
-            <Route path='/posts' component={Posts}/>
-            <Route path='/talks' component={Talks}/>
-            <Route path='/about' component={About}/>
-            <Footer/>
+            <Navigation />
+            <ProfileSummary />
+            <Route exact={true} path='/' component={Home} />
+            <Route path='/home' component={Home} />
+            <Route path='/projects' component={Projects} />
+            <Route path='/posts' component={Posts} />
+            <Route path='/talks' component={Talks} />
+            <Route path='/about' component={About} />
+            <Route path='/imprint' component={Imprint} />
+            <Footer />
           </div>
         </Router>
       </div>
