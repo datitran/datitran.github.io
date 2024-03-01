@@ -21,8 +21,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "^3.0.1",
     "react-test-renderer": "^16.7.0",
-    "reactstrap": "^7.1.0",
-    "gh-pages": "^6.1.1"
+    "reactstrap": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
