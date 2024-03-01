@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.cec36d7b.chunk.css",
-    "main.js": "/static/js/main.2bdf05e8.chunk.js",
-    "main.js.map": "/static/js/main.2bdf05e8.chunk.js.map",
+    "main.css": "/static/css/main.0c77c6e5.chunk.css",
+    "main.js": "/static/js/main.36302470.chunk.js",
+    "main.js.map": "/static/js/main.36302470.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bff4bee0.js",
     "runtime-main.js.map": "/static/js/runtime-main.bff4bee0.js.map",
     "static/css/2.4e15b5ff.chunk.css": "/static/css/2.4e15b5ff.chunk.css",
-    "static/js/2.4c7a04ff.chunk.js": "/static/js/2.4c7a04ff.chunk.js",
-    "static/js/2.4c7a04ff.chunk.js.map": "/static/js/2.4c7a04ff.chunk.js.map",
+    "static/js/2.28cbc867.chunk.js": "/static/js/2.28cbc867.chunk.js",
+    "static/js/2.28cbc867.chunk.js.map": "/static/js/2.28cbc867.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0fbb0f771354b12c9ed84a397cc036fc.js": "/precache-manifest.0fbb0f771354b12c9ed84a397cc036fc.js",
+    "precache-manifest.231e5800d9b186946320121f61c781b7.js": "/precache-manifest.231e5800d9b186946320121f61c781b7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4e15b5ff.chunk.css.map": "/static/css/2.4e15b5ff.chunk.css.map",
-    "static/css/main.cec36d7b.chunk.css.map": "/static/css/main.cec36d7b.chunk.css.map",
-    "static/js/2.4c7a04ff.chunk.js.LICENSE.txt": "/static/js/2.4c7a04ff.chunk.js.LICENSE.txt",
+    "static/css/main.0c77c6e5.chunk.css.map": "/static/css/main.0c77c6e5.chunk.css.map",
+    "static/js/2.28cbc867.chunk.js.LICENSE.txt": "/static/js/2.28cbc867.chunk.js.LICENSE.txt",
     "static/media/CV.pdf": "/static/media/CV.a8482ad4.pdf",
     "static/media/apache_nifi.jpg": "/static/media/apache_nifi.4e3d35da.jpg",
     "static/media/employer_branding_dat_tran.jpg": "/static/media/employer_branding_dat_tran.67f99b7c.jpg",
@@ -30,7 +30,6 @@
     "static/media/logo_actionable_data.png": "/static/media/logo_actionable_data.35d6f0f7.png",
     "static/media/logo_alldus.jpg": "/static/media/logo_alldus.ed376d20.jpg",
     "static/media/logo_aws.jpg": "/static/media/logo_aws.caddfc00.jpg",
-    "static/media/logo_beyond_coding.jpg": "/static/media/logo_beyond_coding.f3b132d1.jpg",
     "static/media/logo_cloudfoundry.png": "/static/media/logo_cloudfoundry.59805dca.png",
     "static/media/logo_datafestival.jpg": "/static/media/logo_datafestival.93e45300.jpg",
     "static/media/logo_datahack.jpg": "/static/media/logo_datahack.baf7f742.jpg",
@@ -58,8 +57,8 @@
   "entrypoints": [
     "static/js/runtime-main.bff4bee0.js",
     "static/css/2.4e15b5ff.chunk.css",
-    "static/js/2.4c7a04ff.chunk.js",
-    "static/css/main.cec36d7b.chunk.css",
-    "static/js/main.2bdf05e8.chunk.js"
+    "static/js/2.28cbc867.chunk.js",
+    "static/css/main.0c77c6e5.chunk.css",
+    "static/js/main.36302470.chunk.js"
   ]
 }
