@@ -25,10 +25,10 @@ class Home extends React.Component {
       <br></br>
       <p>I offer services in:</p>
       <ul>
-        <li><h5>Tech due diligence </h5> 👉 I check code quality, do architectural review, review your tech stack and roadmap</li>
-        <li><h5>Keynote talks </h5> 👉 Introductory AI talks for both technical and non-technical audience, topics range from Generative AI to old boring ML</li>
-        <li><h5>Discovery and strategy workshops </h5> 👉 I help you explore AI use cases tailored to your needs and rank them according to business value</li>
-        <li><h5>Sparring Partner </h5> 👉 Due to my wide range of experiences, I can be a sparring partner for your team for both higher level management and also working level</li>
+        <li><h5>Tech due diligence </h5> &#x1F60E; I check code quality, do architectural review, review your tech stack and roadmap</li>
+        <li><h5>Keynote talks </h5> &#x1F60E; Introductory AI talks for both technical and non-technical audience, topics range from Generative AI to old boring ML</li>
+        <li><h5>Discovery and strategy workshops </h5> &#x1F60E; I help you explore AI use cases tailored to your needs and rank them according to business value</li>
+        <li><h5>Sparring Partner </h5> &#x1F60E; Due to my wide range of experiences, I can be a sparring partner for your team for both higher level management and also working level</li>
       </ul>
       <br></br>
       <Row>
