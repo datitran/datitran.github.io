@@ -23,14 +23,6 @@ class Home extends React.Component {
       This is my personal homepage. I work in the intersection between humans and machines. Feel free to contact me at <a href="mailto:hello@dat-tran.com" className='home__links'>hello@dat-tran.com</a> for work-related inquiries.
       <br></br>
       <br></br>
-      <p>I offer services in:</p>
-      <ul>
-        <li><h5>Tech due diligence </h5> 🔤 I check code quality, do architectural review, review your tech stack and roadmap</li>
-        <li><h5>Keynote talks </h5> 🎙️ Introductory AI talks for both technical and non-technical audience, topics range from Generative AI to old boring ML</li>
-        <li><h5>Discovery and strategy workshops </h5> 🧭 I help you explore AI use cases tailored to your needs and rank them according to business value</li>
-        <li><h5>Sparring Partner </h5> 🤖 Due to my wide range of experiences, I can be a sparring partner for your team for both higher level management and also working level</li>
-      </ul>
-      <br></br>
       <Row>
         <Col>
           <CardDeck>
