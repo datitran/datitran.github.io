@@ -79,7 +79,7 @@ class Home extends React.Component {
         <Col>
           <CardDeck>
             <Card>
-              <a href='http://engineering.pivotal.io/post/api-first-for-data-science/'>
+              <a href='https://tanzu.vmware.com/content/pivotal-engineering-journal/api-first-for-data-science-2'>
                 <ProgressiveImage src={imageThree} placeholder={imageThreeSmall}>
                   {src => {
                     return (
