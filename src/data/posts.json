@@ -1,5 +1,12 @@
 [
   {
+    "title": "Building a Fast and Efficient Semantic Search System Using OpenVINO and Postgres",
+    "url": "https://dev.to/datitran/building-a-fast-and-efficient-semantic-search-system-using-openvino-and-postgres-fd6",
+    "image_file": "logo_devto.png",
+    "date": "2024-10-21",
+    "description": "In this article, I described how we built a high-performance, CPU-only semantic search system using OpenVINO and PostgreSQL with pgvector on AWS, achieving real-time responses through optimized retrieval, reranking, and batching techniques."
+  },
+  {
     "title": "Creating Robust Neural Speech Synthesis with ForwardTacotron",
     "url": "https://developer.nvidia.com/blog/creating-robust-neural-speech-synthesis-with-forwardtacotron/",
     "image_file": "logo_nvidia.png",

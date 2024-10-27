@@ -13,6 +13,10 @@ yarn start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Note
+
+- Node.js version 10.24.1 is currently in use. You can switch versions by running `sudo n 10.24.1`.
+
 ## Copyright
 
 See [LICENSE](LICENSE) for details.
