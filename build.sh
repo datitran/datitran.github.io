@@ -1,4 +1,4 @@
 #!/bin/bash
-yarn install
-yarn run build
+npm install
+NODE_OPTIONS=--openssl-legacy-provider npm run build
 cp README.md LICENSE build/

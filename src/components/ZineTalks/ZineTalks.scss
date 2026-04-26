@@ -1,0 +1,77 @@
+@import '../../styles/zine-tokens';
+
+.zine-talks {
+  padding: $section-pad;
+  border-bottom: $border-w solid $ink;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: $border-w solid $ink;
+  }
+
+  &__card {
+    padding: 20px 22px;
+    border-bottom: $border-w-thin solid $ink;
+
+    &--even {
+      background: $paper;
+      border-right: $border-w-thin solid $ink;
+    }
+
+    &--odd {
+      background: rgba(255, 61, 167, 0.05);
+    }
+
+    &:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__year {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 28px;
+    font-style: italic;
+  }
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+
+  &__venue {
+    font-family: $mono;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-talks {
+    padding: $section-pad-mobile;
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      &--even {
+        border-right: none;
+      }
+    }
+  }
+}

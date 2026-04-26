@@ -1,0 +1,40 @@
+@import '../../styles/zine-tokens';
+
+.marquee {
+  overflow: hidden;
+  padding: 14px 0;
+  border-top: $border-w solid $ink;
+  border-bottom: $border-w solid $ink;
+
+  &__track {
+    display: inline-flex;
+    gap: 40px;
+    white-space: nowrap;
+    font-family: $display;
+    font-weight: 700;
+    font-size: 38px;
+    font-style: italic;
+    letter-spacing: -0.02em;
+    animation: zineScroll 40s linear infinite;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__star {
+    font-style: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee__track {
+    font-size: 24px;
+    gap: 24px;
+  }
+  .marquee__item {
+    gap: 24px;
+  }
+}

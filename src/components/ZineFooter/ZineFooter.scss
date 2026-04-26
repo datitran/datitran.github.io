@@ -1,0 +1,30 @@
+@import '../../styles/zine-tokens';
+
+.zine-footer {
+  padding: 30px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: $mono;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &__link {
+    color: $ink;
+    text-decoration: underline;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-footer {
+    padding: 20px 16px;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}

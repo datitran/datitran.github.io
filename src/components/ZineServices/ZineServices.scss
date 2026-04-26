@@ -1,0 +1,100 @@
+@import '../../styles/zine-tokens';
+
+.zine-services {
+  padding: $section-pad;
+  border-bottom: $border-w solid $ink;
+
+  &__sub {
+    font-size: 17px;
+    max-width: 760px;
+    margin: 0 0 28px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: $border-w solid $ink;
+  }
+
+  &__card {
+    padding: 28px;
+
+    &--even {
+      background: $paper;
+      border-right: $border-w solid $ink;
+    }
+
+    &--odd {
+      background: rgba(31, 77, 255, 0.04);
+    }
+
+    &:nth-child(-n+2) {
+      border-bottom: $border-w solid $ink;
+    }
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__glyph {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1;
+    font-style: italic;
+  }
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 14px 0 10px;
+    letter-spacing: -0.02em;
+  }
+
+  &__blurb {
+    margin: 0 0 12px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  &__bullets {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-services {
+    padding: $section-pad-mobile;
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      border-bottom: $border-w solid $ink;
+
+      &--even {
+        border-right: none;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__glyph {
+      font-size: 40px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+  }
+}

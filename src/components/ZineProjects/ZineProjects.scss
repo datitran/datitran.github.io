@@ -1,0 +1,75 @@
+@import '../../styles/zine-tokens';
+
+.zine-projects {
+  padding: $section-pad;
+  border-bottom: $border-w solid $ink;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+
+  &__card {
+    color: $ink;
+    text-decoration: none;
+    display: block;
+    border: $border-w solid $ink;
+    background: $paper;
+    padding: 14px;
+    transition: transform 0.2s ease;
+  }
+
+  &__img {
+    aspect-ratio: 4/3;
+    background-size: cover;
+    background-position: center;
+    filter: contrast(1.1);
+  }
+
+  &__meta {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $mono;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 6px 0;
+    letter-spacing: -0.02em;
+  }
+
+  &__blurb {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__tag {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-projects {
+    padding: $section-pad-mobile;
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .zine-projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

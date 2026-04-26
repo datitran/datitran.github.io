@@ -1,0 +1,80 @@
+@import '../../styles/zine-tokens';
+
+.zine-oss {
+  padding: $section-pad;
+  border-bottom: $border-w solid $ink;
+  background: rgba(31, 77, 255, 0.04);
+
+  &__intro {
+    font-size: 17px;
+    max-width: 760px;
+    margin: 0 0 28px;
+    line-height: 1.6;
+  }
+
+  &__link {
+    color: $ink;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: $blue;
+    text-decoration-thickness: 3px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__card {
+    color: $ink;
+    text-decoration: none;
+    display: block;
+    border: $border-w solid $ink;
+    background: $paper;
+    padding: 18px;
+  }
+
+  &__repo-num {
+    font-family: $mono;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(14, 14, 14, 0.55);
+  }
+
+  &__repo-name {
+    font-family: $mono;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 4px;
+    letter-spacing: -0.01em;
+  }
+
+  &__repo-desc {
+    margin: 10px 0 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-oss {
+    padding: $section-pad-mobile;
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__repo-name {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .zine-oss__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

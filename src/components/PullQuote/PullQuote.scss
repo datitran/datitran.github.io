@@ -1,0 +1,52 @@
+@import '../../styles/zine-tokens';
+
+.pull-quote {
+  padding: 80px 32px;
+  background: $pink;
+  color: $ink;
+  border-bottom: $border-w solid $ink;
+
+  &__label {
+    font-family: $mono;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin: 0;
+    font-style: italic;
+  }
+
+  &__attr {
+    margin-top: 30px;
+    font-family: $mono;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 768px) {
+  .pull-quote {
+    padding: 40px 16px;
+
+    &__text {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pull-quote__text {
+    font-size: 48px;
+  }
+}

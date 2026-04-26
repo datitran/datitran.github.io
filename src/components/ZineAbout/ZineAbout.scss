@@ -1,0 +1,46 @@
+@import '../../styles/zine-tokens';
+
+.zine-about {
+  padding: $section-pad;
+  border-bottom: $border-w solid $ink;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    font-size: 17px;
+    line-height: 1.7;
+
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    color: $ink;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+    &--blue { text-decoration-color: $blue; }
+    &--pink {
+      text-decoration-color: $pink;
+      text-decoration-thickness: 3px;
+    }
+  }
+
+  &__cta {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-about {
+    padding: $section-pad-mobile;
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+      font-size: 15px;
+    }
+  }
+}

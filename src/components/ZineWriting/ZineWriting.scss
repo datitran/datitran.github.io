@@ -1,0 +1,79 @@
+@import '../../styles/zine-tokens';
+
+.zine-writing {
+  padding: $section-pad;
+  border-bottom: $border-w solid $ink;
+
+  &__table {
+    border: $border-w solid $ink;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 70px 1fr 220px 110px;
+    gap: 16px;
+    padding: 18px 20px;
+    align-items: baseline;
+    border-bottom: $border-w-thin solid $ink;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--even { background: $paper; }
+    &--odd { background: rgba(31, 77, 255, 0.06); }
+  }
+
+  &__num {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 30px;
+    color: $pink;
+    font-style: italic;
+  }
+
+  &__title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__outlet {
+    font-family: $mono;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__date {
+    font-family: $mono;
+    font-size: 12px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-writing {
+    padding: $section-pad-mobile;
+
+    &__row {
+      grid-template-columns: 40px 1fr;
+      gap: 8px;
+      padding: 14px 12px;
+    }
+
+    &__outlet,
+    &__date {
+      display: none;
+    }
+
+    &__num {
+      font-size: 22px;
+    }
+
+    &__title {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import '../../styles/zine-tokens';
+
+.zine-nav {
+  padding: 14px 32px;
+  border-bottom: $border-w solid $ink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $paper;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  &__left {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+
+  &__brand {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: italic;
+    letter-spacing: -0.02em;
+    color: $ink;
+    text-decoration: none;
+  }
+
+  &__brand-bang {
+    color: $pink;
+  }
+
+  &__subtitle {
+    font-family: $mono;
+    font-size: 11px;
+    color: rgba(14, 14, 14, 0.6);
+  }
+
+  &__links {
+    display: flex;
+    gap: 18px;
+  }
+
+  &__link {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $ink;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  &__burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    padding: 0;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: $ink;
+      left: 0;
+      transition: 0.25s ease;
+
+      &:nth-child(1) { top: 0; }
+      &:nth-child(2) { top: 10px; }
+      &:nth-child(3) { top: 20px; }
+    }
+
+    &--open span {
+      &:nth-child(1) { top: 10px; transform: rotate(45deg); }
+      &:nth-child(2) { opacity: 0; }
+      &:nth-child(3) { top: 10px; transform: rotate(-45deg); }
+    }
+  }
+
+  &__cta {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .zine-nav {
+    flex-wrap: wrap;
+    padding: 14px 16px;
+
+    &__subtitle {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+      order: 2;
+    }
+
+    &__links {
+      display: none;
+      width: 100%;
+      order: 4;
+      flex-direction: column;
+      padding: 16px 0;
+      gap: 12px;
+
+      &--open {
+        display: flex;
+      }
+    }
+
+    &__cta {
+      order: 3;
+    }
+  }
+}
