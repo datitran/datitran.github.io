@@ -152,9 +152,9 @@ export const TESTIMONIALS = [
 ];
 
 export const STATS = [
-  { label: "Years in tech leadership", value: "15+" },
+  { label: "Years in tech leadership", value: "20+" },
   { label: "LinkedIn followers", value: "76k+" },
-  { label: "Talks & podcasts", value: "26+" },
+  { label: "Talks & podcasts", value: "100+" },
   { label: "Open-source repos", value: "12+" },
 ];
 
