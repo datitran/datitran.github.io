@@ -1,149 +1,24 @@
 // ============================================================
-// DARK THEME — hover/focus overrides and special rules
-// Gold (#ffd66e) replaces pink/blue as hover accent in dark mode
+// DARK THEME — non-hover overrides only
+// Hover states inherit from light theme via CSS custom properties
 // ============================================================
 
-// --- Nav links ---
-:root[data-theme="dark"] .zine-nav__link:hover {
-  color: #ffd66e;
-  background-image: linear-gradient(#ffd66e, #ffd66e);
-}
-
-// --- Brand wiggle ---
-.zine-nav__brand { transition: transform .3s; }
-.zine-nav__brand:hover { transform: rotate(-2deg); }
-.zine-nav__brand:hover .zine-nav__brand-bang { animation: bangWiggle .5s ease 1; }
-@keyframes bangWiggle {
-  0%, 100% { transform: rotate(0); }
-  25% { transform: rotate(-12deg); }
-  75% { transform: rotate(12deg); }
-}
-
-// --- Hero email ---
-:root[data-theme="dark"] .hero__email:hover {
-  color: #ffd66e;
-  text-decoration-color: #ffd66e;
-  background: transparent;
-  box-shadow: none;
-}
-
-// --- Hero photo ---
-:root[data-theme="dark"] .hero__photo-wrap:hover .hero__photo {
-  filter: grayscale(0) contrast(1) brightness(1.1);
-  box-shadow: 12px 12px 0 #ffd66e;
-}
-
-// --- Stickers ---
-:root[data-theme="dark"] a:hover > .sticker,
-:root[data-theme="dark"] .sticker:hover {
-  filter: brightness(1.15) saturate(1.1);
-}
-
-// --- About links ---
-:root[data-theme="dark"] .zine-about__link--pink:hover {
-  color: #ffd66e;
-  text-decoration-color: #ffd66e;
-  background: transparent;
-  box-shadow: none;
-}
-
-// --- Service cards ---
-:root[data-theme="dark"] .zine-services__card:hover {
-  background: rgba(255, 214, 110, 0.08);
-  box-shadow: 6px 6px 0 #ffd66e;
-}
-:root[data-theme="dark"] .zine-services__card:hover .zine-services__title {
-  color: #ffd66e;
-}
-
-// --- Companies cells ---
-:root[data-theme="dark"] .zine-companies__cell:hover {
-  background: #ffd66e !important;
-  color: #14131a !important;
-}
-
-// --- Project cards ---
-:root[data-theme="dark"] .zine-projects__card:hover {
-  box-shadow: 10px 10px 0 #ffd66e !important;
-}
-:root[data-theme="dark"] .zine-projects__card:hover .zine-projects__img {
-  filter: contrast(1.1) brightness(1.05) saturate(1.1);
-}
-:root[data-theme="dark"] .zine-projects__card:hover .zine-projects__title {
-  color: #ffd66e;
-}
-:root[data-theme="dark"] .zine-projects__img {
-  filter: contrast(1.05) brightness(0.92);
-}
-
-// --- Writing rows ---
-:root[data-theme="dark"] .zine-writing__row:hover {
-  background: rgba(255, 214, 110, 0.08);
-  color: var(--paper);
-}
-:root[data-theme="dark"] .zine-writing__row:hover .zine-writing__title {
-  color: #ffd66e;
-}
-:root[data-theme="dark"] .zine-writing__row:hover .zine-writing__arrow {
-  color: #ffd66e;
-}
-:root[data-theme="dark"] .zine-writing__row:hover .zine-writing__num {
-  color: #ffd66e;
-}
-
-// --- Talk cards ---
-:root[data-theme="dark"] .zine-talks__card:hover {
-  background: rgba(255, 214, 110, 0.08);
-  box-shadow: 6px 6px 0 #ffd66e;
-  color: var(--ink);
-}
-:root[data-theme="dark"] .zine-talks__card:hover .zine-talks__title {
-  color: #ffd66e;
-}
-:root[data-theme="dark"] .zine-talks__card:hover .zine-talks__venue {
-  color: var(--ink-soft);
-}
-
-// --- OSS cards ---
-:root[data-theme="dark"] .zine-oss__card:hover {
-  box-shadow: 10px 10px 0 #ffd66e !important;
-}
-:root[data-theme="dark"] .zine-oss__card:hover .zine-oss__repo-name {
-  color: #ffd66e;
-}
-:root[data-theme="dark"] .zine-oss__link:hover {
-  color: #ffd66e;
-  text-decoration-color: #ffd66e;
-  background: transparent;
-  box-shadow: none;
-}
-
-// --- Contact email ---
-:root[data-theme="dark"] .zine-contact__email:hover {
-  color: #ffd66e;
-  text-decoration-color: #ffd66e;
-  background: transparent;
-  box-shadow: none;
-}
-
-// --- Footer links ---
-:root[data-theme="dark"] .zine-footer__link:hover {
-  color: #ffd66e;
-  background: transparent;
-  box-shadow: none;
-}
-
-// --- Focus rings (a11y) ---
+// --- Focus rings (a11y) — gold in dark mode ---
 :root[data-theme="dark"] a:focus-visible,
 :root[data-theme="dark"] .plate:focus-visible {
   outline-color: #ffd66e;
 }
 
-// --- Pull-quote dark overrides ---
+// --- Pull-quote: dark text on pink must stay dark in both themes ---
 :root[data-theme="dark"] .pull-quote {
   color: #14131a;
 }
 :root[data-theme="dark"] .pull-quote__highlight {
   background: #14131a;
   color: var(--pink);
+}
+
+// --- Project images: softer filter in dark ---
+:root[data-theme="dark"] .zine-projects__img {
+  filter: contrast(1.05) brightness(0.92);
 }
