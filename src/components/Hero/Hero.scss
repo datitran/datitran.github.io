@@ -37,10 +37,22 @@
   }
 
   &__email {
-    color: $ink;
+    color: $pink;
+    font-weight: 600;
     text-decoration: underline;
     text-decoration-color: $pink;
     text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: $pink;
+      color: $paper;
+      text-decoration-color: $paper;
+      box-shadow: 0 0 0 3px $pink;
+    }
   }
 
   &__tags {

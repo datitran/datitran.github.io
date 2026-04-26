@@ -16,6 +16,15 @@
     color: $ink;
     text-decoration: none;
     display: block;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: $ink;
+      color: $paper;
+      outline: none;
+    }
 
     &--even {
       background: $paper;
@@ -36,6 +45,18 @@
       align-items: center;
       margin-bottom: 8px;
     }
+  }
+
+  &__title {
+    transition: color 0.15s ease;
+  }
+
+  &__card:hover &__title {
+    color: $paper;
+  }
+
+  &__card:hover &__venue {
+    color: rgba(251, 246, 238, 0.7);
   }
 
   &__year {

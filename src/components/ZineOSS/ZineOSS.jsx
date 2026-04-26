@@ -24,8 +24,12 @@ const ZineOSS = () => (
           target="_blank"
           rel="noreferrer noopener"
           className="zine-oss__card"
-          style={{ boxShadow: `5px 5px 0 ${i % 2 === 0 ? PINK : BLUE}` }}
+          style={{
+            boxShadow: `5px 5px 0 ${i % 2 === 0 ? PINK : BLUE}`,
+            '--shadow-color': i % 2 === 0 ? PINK : BLUE,
+          }}
         >
+          <span className="zine-oss__badge">↗</span>
           <div className="zine-oss__repo-num">// repo {String(i + 1).padStart(2, '0')}</div>
           <div className="zine-oss__repo-name">{r.name}</div>
           <p className="zine-oss__repo-desc">{r.desc} ⭐ {r.stars}</p>

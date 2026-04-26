@@ -19,6 +19,14 @@
     color: $ink;
     text-decoration: underline;
     margin-right: 12px;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: $ink;
+      color: $paper;
+      box-shadow: 0 0 0 3px $ink;
+    }
   }
 }
 

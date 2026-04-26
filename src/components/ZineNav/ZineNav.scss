@@ -44,9 +44,34 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: $ink;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    text-decoration: none;
+    position: relative;
+    padding: 4px 0;
+    background-image: linear-gradient($ink, $ink);
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-size: 100% 2px;
+    }
+
+    &--active {
+      background-size: 100% 2px;
+      color: $blue;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: $pink;
+        margin-right: 6px;
+        transform: translateY(-2px);
+      }
+    }
   }
 
   &__burger {

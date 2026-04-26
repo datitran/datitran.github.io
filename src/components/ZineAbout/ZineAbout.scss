@@ -17,14 +17,49 @@
   }
 
   &__link {
-    color: $ink;
     text-decoration: underline;
     text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, text-decoration-thickness 0.15s ease;
 
-    &--blue { text-decoration-color: $blue; }
+    &--blue {
+      color: $blue;
+      font-weight: 600;
+      text-decoration-color: $blue;
+
+      &:hover,
+      &:focus-visible {
+        background: $blue;
+        color: $paper;
+        text-decoration-color: $paper;
+        text-decoration-thickness: 3px;
+        box-shadow: 0 0 0 3px $blue;
+      }
+    }
+
     &--pink {
+      color: $pink;
+      font-weight: 700;
       text-decoration-color: $pink;
       text-decoration-thickness: 3px;
+
+      &:hover,
+      &:focus-visible {
+        background: $pink;
+        color: $paper;
+        text-decoration-color: $paper;
+        box-shadow: 0 0 0 3px $pink;
+      }
+    }
+
+    .arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    &--pink:hover .arrow {
+      transform: translateX(4px);
     }
   }
 

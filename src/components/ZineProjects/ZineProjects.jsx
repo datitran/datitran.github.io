@@ -22,11 +22,14 @@ const ZineProjects = () => (
           target="_blank"
           rel="noreferrer noopener"
           className="zine-projects__card"
+          data-shadow-color={SHADOW_COLORS[i % 3]}
           style={{
             transform: i % 2 === 0 ? 'rotate(-0.6deg)' : 'rotate(0.5deg)',
             boxShadow: `6px 6px 0 ${SHADOW_COLORS[i % 3]}`,
+            '--shadow-color': SHADOW_COLORS[i % 3],
           }}
         >
+          <span className="zine-projects__badge">↗</span>
           <div className="zine-projects__img" style={{ backgroundImage: `url(${p.img})` }} />
           <div className="zine-projects__meta">
             <span>{p.org}</span><span>{p.year}</span>

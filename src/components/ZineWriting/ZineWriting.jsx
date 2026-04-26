@@ -25,6 +25,7 @@ const ZineWriting = () => (
           <span className="zine-writing__title">{w.title}</span>
           <span className="zine-writing__outlet">{w.outlet}</span>
           <span className="zine-writing__date">{w.date}</span>
+          <span className="zine-writing__arrow">→</span>
         </a>
       ))}
     </div>

@@ -19,11 +19,22 @@
     font-family: $display;
     font-weight: 700;
     font-size: 28px;
-    color: $ink;
+    color: $pink;
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-decoration-color: $pink;
+    text-underline-offset: 3px;
     letter-spacing: -0.01em;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: $pink;
+      color: $paper;
+      text-decoration-color: $paper;
+      box-shadow: 0 0 0 3px $pink;
+    }
   }
 
   &__socials {
@@ -35,6 +46,17 @@
 
     a {
       text-decoration: none;
+      display: inline-block;
+      transition: transform 0.15s ease;
+
+      &:hover,
+      &:focus-visible {
+        transform: translate(-2px, -2px);
+
+        .sticker {
+          box-shadow: 7px 7px 0 $ink;
+        }
+      }
     }
   }
 }
