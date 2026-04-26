@@ -1,0 +1,30 @@
+// ============================================================
+// DARK THEME — non-hover overrides only
+// Hover states inherit from light theme via CSS custom properties
+// ============================================================
+
+// --- Hero photo: colorize + gold shadow on hover in dark ---
+:root[data-theme="dark"] .hero__photo-wrap:hover .hero__photo {
+  filter: grayscale(0) contrast(1) brightness(1.1);
+  box-shadow: 12px 12px 0 #ffd66e;
+}
+
+// --- Focus rings (a11y) — gold in dark mode ---
+:root[data-theme="dark"] a:focus-visible,
+:root[data-theme="dark"] .plate:focus-visible {
+  outline-color: #ffd66e;
+}
+
+// --- Pull-quote: dark text on pink must stay dark in both themes ---
+:root[data-theme="dark"] .pull-quote {
+  color: #14131a;
+}
+:root[data-theme="dark"] .pull-quote__highlight {
+  background: #14131a;
+  color: var(--pink);
+}
+
+// --- Project images: softer filter in dark ---
+:root[data-theme="dark"] .zine-projects__img {
+  filter: contrast(1.05) brightness(0.92);
+}

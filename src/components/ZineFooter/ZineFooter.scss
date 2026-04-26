@@ -1,0 +1,52 @@
+@use '../../styles/zine-tokens' as *;
+
+.zine-footer {
+  padding: 30px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: $max-width;
+  margin: 0 auto;
+  font-family: $mono;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--paper);
+  border-left: $border-w solid var(--ink-line);
+  border-right: $border-w solid var(--ink-line);
+  border-bottom: $border-w solid var(--ink-line);
+  transition: background-color .9s, border-color .6s;
+
+  &__link {
+    color: var(--ink);
+    text-decoration: underline;
+    margin-right: 12px;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--ink);
+      color: var(--paper);
+      box-shadow: 0 0 0 3px var(--ink);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-footer {
+    padding: 20px 16px;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .zine-footer {
+    border-left: none;
+    border-right: none;
+  }
+}

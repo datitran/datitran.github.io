@@ -1,14 +1,62 @@
-@import '../../styles/variables.scss';
+@use '../../styles/zine-tokens' as *;
 
-.imprint {
-    &__links {
-        text-decoration: underline;
-        text-decoration-color: red;
+.legal-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 32px;
+  font-size: 16px;
+  line-height: 1.7;
 
-        &:hover {
-            color: red;
-            text-decoration: underline;
-            text-decoration-color: red;
-        }
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    font-style: italic;
+  }
+
+  h3 {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 32px 0 12px;
+  }
+
+  h4 {
+    font-family: $sans;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 24px 0 8px;
+  }
+
+  p {
+    margin: 4px 0;
+  }
+
+  ul {
+    padding-left: 24px;
+    margin: 8px 0;
+
+    li {
+      margin: 4px 0;
     }
+  }
+
+  &__updated {
+    margin-top: 32px;
+    font-family: $mono;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+}
+
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 40px 16px;
+
+    &__title {
+      font-size: 40px;
+    }
+  }
 }

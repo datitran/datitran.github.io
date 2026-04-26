@@ -1,130 +1,112 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
-@import './variables';
+@use './zine-tokens' as *;
+@use './theme-tokens';
 
-p {
-    color: $font-color-primary;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 70px;
 }
 
 body {
-    background-color: white;
-    font-family: 'Ubuntu Mono', monospace;
+  background:
+    radial-gradient(ellipse 100% 70% at 50% -10%, var(--room-from), var(--room-to) 70%) fixed,
+    var(--paper);
+  color: var(--ink);
+  font-family: $sans;
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color .9s ease, color .6s ease;
+  overflow-x: hidden;
 }
 
-section {
-    max-width: 1200px;
-    padding: 30px 40px 10px;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 1100px 700px at calc(100% - 60px) calc(100% - 80px), var(--halo), transparent 70%);
+  opacity: var(--halo-strength);
+  transition: opacity .9s ease;
+  mix-blend-mode: screen;
 }
 
 a {
-    color: $font-color-primary;
-    display: inline-block;
-
+  color: inherit;
+  text-decoration: none;
 }
 
-a.button {
-    text-transform: uppercase;
-    background-color: transparent;
-    border: 3px solid #000;
-    text-decoration: none;
-    font-weight: bold;
+ul {
+  list-style: disc;
+}
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--blue);
+  color: var(--on-ink);
+}
+
+// Marquee animation
+@keyframes zineScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
+
+// Page layout — constrain sections as blocks
+.zine-page {
+  &__body {
     position: relative;
-
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background-color: #fff;
-        z-index: -1;
-        transition: 0.4s;
-
-        @media screen and (max-width : 500px) {
-            width: 100%;
-        }
-    }
-
-    &:hover {
-        &:before {
-            width: 100%;
-        }
-    }
+    z-index: 1;
+    max-width: $max-width;
+    margin: 0 auto;
+    border-left: $border-w solid var(--ink-line);
+    border-right: $border-w solid var(--ink-line);
+    background: var(--paper);
+    transition: background-color .9s ease, border-color .6s ease;
+  }
 }
 
-h2.sectionHeading {
-    font-size: 28px;
-    font-weight: 700;
-    color: $font-color-secondary;
-    background-color: $background-color-secondary;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 25px 0;
-    -webkit-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+@media (max-width: 768px) {
+  .zine-page__body {
+    border-left: none;
+    border-right: none;
+  }
 }
 
-/* Add custom boostrap css */
-.navbar-dark .navbar-nav .nav-link {
-    color: white;
-    text-align:right
+// Sticker utility
+.sticker {
+  display: inline-block;
+  background: var(--pink);
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: 4px 4px 0 var(--ink-line);
+  transition: box-shadow .6s ease;
 }
 
-.navbar-dark .navbar-nav > li > a:hover {
-    text-decoration: underline;
-    color: white !important;
+:root[data-theme="dark"] .sticker {
+  color: var(--on-ink);
 }
 
-button:focus {
-  outline: none;
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (orientation: landscape) {
-    .container {
-        max-width: 700px;
-    }
-}
-
-@media (min-width: 577px) and (max-width: 767px) {
-    .container {
-        max-width: 700px;
-    }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (orientation: landscape) {
-    .container {
-        max-width: 770px;
-    }
-}
-
-// Optimize breakpoints for Pixel 2 XL, iPhone X
-@media (min-width: 769px) and (max-width: 823px) {
-    .container {
-        max-width: 770px;
-    }
-}
-
-@media (min-width: 824px) and (max-width: 991px) {
-    .container {
-        max-width: 900px;
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (orientation: landscape) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (orientation: landscape) {
-    .container {
-        max-width: 1140px;
-    }
+:root[data-theme="dark"] .sticker.sticker--ink {
+  color: var(--paper);
 }

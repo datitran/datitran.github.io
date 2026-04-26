@@ -1,23 +1,25 @@
 # Personal Homepage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Built with React 18 and Vite.
 
 ## Getting Started
 
-Make sure you're in the `develop` branch:
-
 ```
-yarn install
-yarn start
+npm install
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-## Note
+## Build & Deploy
 
-- Node.js version 10.24.1 is currently in use. You can switch versions by running `sudo n 10.24.1`.
+```
+npm run build
+npm run preview   # preview production build locally
+npm run deploy    # deploy to GitHub Pages
+```
 
 ## Copyright
 
 See [LICENSE](LICENSE) for details.
-Copyright (c) 2019 [Dat Tran](http://www.dat-tran.com/).
+Copyright (c) 2019 [Dat Tran](https://dat-tran.com/).

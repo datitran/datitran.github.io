@@ -1,14 +1,1 @@
-@import '../../styles/variables.scss';
-
-.privacy {
-    &__links {
-        text-decoration: underline;
-        text-decoration-color: red;
-
-        &:hover {
-            color: red;
-            text-decoration: underline;
-            text-decoration-color: red;
-        }
-    }
-}
+// Privacy styles use shared .legal-page from Imprint.scss

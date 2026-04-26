@@ -1,0 +1,52 @@
+@use '../../styles/zine-tokens' as *;
+
+.stats-band {
+  padding: 22px 28px;
+  background: var(--ink);
+  color: var(--on-ink);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: background-color .9s, color .9s, border-color .6s;
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  &__value {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 44px;
+    white-space: nowrap;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  &__label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-band {
+    padding: 20px 16px;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    &__item {
+      flex: 1 1 45%;
+    }
+
+    &__value {
+      font-size: 32px;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+@use '../../styles/zine-tokens' as *;
+
+.zine-nav {
+  padding: 14px 32px;
+  border-bottom: $border-w solid var(--ink-line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--paper);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  max-width: $max-width;
+  margin: 0 auto;
+  transition: background-color .9s ease, border-color .6s ease;
+
+  &__left {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+
+  &__brand {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: italic;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  &__brand-bang {
+    color: var(--pink);
+  }
+
+  &__links {
+    display: flex;
+    gap: 18px;
+  }
+
+  &__link {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    text-decoration: none;
+    position: relative;
+    padding: 4px 0;
+    background-image: linear-gradient(var(--ink), var(--ink));
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-size: 100% 2px;
+    }
+
+    &--active {
+      background-size: 100% 2px;
+      color: var(--blue);
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: var(--pink);
+        margin-right: 6px;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    padding: 0;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: var(--ink);
+      left: 0;
+      transition: 0.25s ease;
+
+      &:nth-child(1) { top: 0; }
+      &:nth-child(2) { top: 10px; }
+      &:nth-child(3) { top: 20px; }
+    }
+
+    &--open span {
+      &:nth-child(1) { top: 10px; transform: rotate(45deg); }
+      &:nth-child(2) { opacity: 0; }
+      &:nth-child(3) { top: 10px; transform: rotate(-45deg); }
+    }
+  }
+
+}
+
+@media (max-width: 900px) {
+  .zine-nav {
+    flex-wrap: wrap;
+    padding: 14px 16px;
+
+    &__subtitle {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+      order: 2;
+    }
+
+    &__links {
+      display: none;
+      width: 100%;
+      order: 4;
+      flex-direction: column;
+      padding: 16px 0;
+      gap: 12px;
+
+      &--open {
+        display: flex;
+      }
+    }
+
+  }
+}

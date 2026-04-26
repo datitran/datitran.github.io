@@ -1,0 +1,102 @@
+@use '../../styles/zine-tokens' as *;
+
+.zine-services {
+  padding: $section-pad;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
+
+  &__sub {
+    font-size: 17px;
+    max-width: 760px;
+    margin: 0 0 28px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: $border-w solid var(--ink-line);
+    transition: border-color .6s;
+  }
+
+  &__card {
+    padding: 22px;
+
+    &--even {
+      background: var(--paper);
+      border-right: $border-w solid var(--ink-line);
+    }
+
+    &--odd {
+      background: var(--tint-blue);
+    }
+
+    &:nth-child(-n+2) {
+      border-bottom: $border-w solid var(--ink-line);
+    }
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__glyph {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    font-style: italic;
+  }
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 10px 0 8px;
+    letter-spacing: -0.02em;
+  }
+
+  &__blurb {
+    margin: 0 0 12px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  &__bullets {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-services {
+    padding: $section-pad-mobile;
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      border-bottom: $border-w solid var(--ink-line);
+
+      &--even {
+        border-right: none;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__glyph {
+      font-size: 40px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+  }
+}

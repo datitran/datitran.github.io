@@ -1,0 +1,74 @@
+@use '../../styles/zine-tokens' as *;
+
+.zine-companies {
+  padding: 40px 28px;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: clamp(34px, 4.6vw, 42px);
+    letter-spacing: -0.03em;
+    margin: 0;
+  }
+
+  &__accent {
+    font-style: italic;
+    color: var(--blue);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: $border-w solid var(--ink-line);
+    transition: border-color .6s;
+  }
+
+  &__cell {
+    padding: 22px 8px;
+    text-align: center;
+    font-family: $display;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+    border-right: $border-w solid var(--ink-line);
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-companies {
+    padding: $section-pad-mobile;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__cell {
+      padding: 16px 8px;
+      font-size: 16px;
+      border-bottom: $border-w-thin solid var(--ink-line);
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .zine-companies__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

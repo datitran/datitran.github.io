@@ -1,0 +1,78 @@
+@use '../../styles/zine-tokens' as *;
+
+.zine-contact {
+  padding: 64px 28px 48px;
+  text-align: center;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: clamp(72px, 11vw, 124px);
+    letter-spacing: -0.05em;
+    line-height: 0.85;
+    margin: 24px 0;
+    font-style: italic;
+  }
+
+  &__email {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--pink);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: var(--pink);
+    text-underline-offset: 3px;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--pink);
+      color: var(--paper);
+      text-decoration-color: var(--paper);
+      box-shadow: 0 0 0 3px var(--pink);
+    }
+  }
+
+  &__socials {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.15s ease;
+
+      &:hover,
+      &:focus-visible {
+        transform: translate(-2px, -2px);
+
+        .sticker {
+          box-shadow: 7px 7px 0 var(--ink-line);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-contact {
+    padding: 48px 16px 36px;
+
+    &__email {
+      font-size: 22px;
+    }
+
+    &__socials {
+      margin-top: 30px;
+      gap: 12px;
+    }
+  }
+}

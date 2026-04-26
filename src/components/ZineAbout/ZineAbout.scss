@@ -1,0 +1,82 @@
+@use '../../styles/zine-tokens' as *;
+
+.zine-about {
+  padding: $section-pad;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    font-size: 15px;
+    line-height: 1.65;
+
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, text-decoration-thickness 0.15s ease;
+
+    &--blue {
+      color: var(--blue);
+      font-weight: 600;
+      text-decoration-color: var(--blue);
+
+      &:hover,
+      &:focus-visible {
+        background: var(--blue);
+        color: var(--paper);
+        text-decoration-color: var(--paper);
+        text-decoration-thickness: 3px;
+        box-shadow: 0 0 0 3px var(--blue);
+      }
+    }
+
+    &--pink {
+      color: var(--pink);
+      font-weight: 700;
+      text-decoration-color: var(--pink);
+      text-decoration-thickness: 3px;
+
+      &:hover,
+      &:focus-visible {
+        background: var(--pink);
+        color: var(--paper);
+        text-decoration-color: var(--paper);
+        box-shadow: 0 0 0 3px var(--pink);
+      }
+    }
+
+    .arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    &--pink:hover .arrow {
+      transform: translateX(4px);
+    }
+  }
+
+  &__cta {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-about {
+    padding: $section-pad-mobile;
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+      font-size: 15px;
+    }
+  }
+}

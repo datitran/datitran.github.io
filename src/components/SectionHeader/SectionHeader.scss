@@ -1,0 +1,29 @@
+@use '../../styles/zine-tokens' as *;
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: clamp(40px, 6.2vw, 60px);
+    letter-spacing: -0.04em;
+    margin: 0;
+    font-style: italic;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &__title {
+      font-size: 48px;
+    }
+  }
+}

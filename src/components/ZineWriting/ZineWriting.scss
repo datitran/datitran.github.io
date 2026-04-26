@@ -1,0 +1,111 @@
+@use '../../styles/zine-tokens' as *;
+
+.zine-writing {
+  padding: $section-pad;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
+
+  &__table {
+    border: $border-w solid var(--ink-line);
+    transition: border-color .6s;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 70px 1fr 220px 110px 28px;
+    gap: 16px;
+    padding: 18px 20px;
+    align-items: center;
+    border-bottom: $border-w-thin solid var(--ink-line);
+    color: var(--ink);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease, border-color .6s;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--ink);
+      color: var(--paper);
+      transform: translateX(2px);
+      outline: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--even { background: var(--paper); }
+    &--odd { background: var(--tint-blue-2); }
+  }
+
+  &__arrow {
+    font-family: $mono;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    transition: transform 0.18s ease;
+    color: var(--blue);
+  }
+
+  &__row:hover &__arrow {
+    transform: translateX(4px);
+    color: var(--pink);
+  }
+
+  &__row:hover &__num {
+    color: var(--pink);
+  }
+
+  &__num {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--pink);
+    font-style: italic;
+  }
+
+  &__title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &__outlet {
+    font-family: $mono;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__date {
+    font-family: $mono;
+    font-size: 12px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-writing {
+    padding: $section-pad-mobile;
+
+    &__row {
+      grid-template-columns: 40px 1fr 28px;
+      gap: 8px;
+      padding: 14px 12px;
+    }
+
+    &__outlet,
+    &__date {
+      display: none;
+    }
+
+    &__num {
+      font-size: 22px;
+    }
+
+    &__title {
+      font-size: 15px;
+    }
+  }
+}

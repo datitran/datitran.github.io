@@ -1,0 +1,114 @@
+@use '../../styles/zine-tokens' as *;
+
+.hero {
+  padding: 36px 28px 44px;
+  border-bottom: $border-w solid var(--ink-line);
+  position: relative;
+  transition: border-color .6s ease;
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: clamp(72px, 11vw, 132px);
+    line-height: 0.82;
+    letter-spacing: -0.05em;
+    margin: 12px 0 24px;
+  }
+
+  &__pink { color: var(--pink); }
+
+  &__blue {
+    color: var(--blue);
+    font-style: italic;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.55fr 1fr;
+    gap: 36px;
+    align-items: end;
+  }
+
+  &__intro {
+    font-size: 18px;
+    line-height: 1.45;
+    margin: 0;
+    font-weight: 500;
+    max-width: 600px;
+  }
+
+  &__email {
+    color: var(--pink);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--pink);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--pink);
+      color: var(--paper);
+      text-decoration-color: var(--paper);
+      box-shadow: 0 0 0 3px var(--pink);
+    }
+  }
+
+  &__tags {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__photo-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+  }
+
+  &__photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-size: cover;
+    background-position: center;
+    filter: var(--photo-filter);
+    border: $border-w solid var(--ink-line);
+    transform: rotate(2deg);
+    box-shadow: 8px 8px 0 var(--blue);
+    transition: filter .4s, box-shadow .3s, transform .4s cubic-bezier(.5, 1.5, .5, 1), border-color .6s;
+  }
+
+  &__photo-wrap:hover &__photo {
+    transform: rotate(-1deg) translate(-2px, -2px);
+    box-shadow: 12px 12px 0 var(--pink);
+    filter: grayscale(0) contrast(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 32px 16px 28px;
+
+    &__title {
+      font-size: 72px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    &__intro {
+      font-size: 17px;
+    }
+
+    &__photo-wrap {
+      max-width: 240px;
+      margin-left: 0;
+    }
+  }
+}

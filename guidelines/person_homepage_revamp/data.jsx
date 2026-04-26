@@ -1,0 +1,161 @@
+// Shared data for all three homepage directions.
+
+const DAT = {
+  name: "Dat Tran",
+  short: "Dat",
+  tagline: "Experienced technology and business leader. Entrepreneur. Researcher. (Keynote) Speaker. Mentor.",
+  email: "hello@dat-tran.com",
+  linkedin: "https://www.linkedin.com/in/dat-tran-a1602320/",
+  github: "https://github.com/datitran",
+  medium: "https://medium.com/@datitran",
+  twitter: "https://twitter.com/datitran",
+  followers: "76k+",
+};
+
+const SERVICES = [
+  {
+    id: "tdd",
+    title: "Tech due diligence",
+    glyph: "01",
+    blurb: "Code quality audits, architectural review, tech-stack and roadmap assessment for investors and acquirers.",
+    bullets: ["Code & architecture review", "Tech stack assessment", "Roadmap critique"],
+  },
+  {
+    id: "talks",
+    title: "Keynote talks",
+    glyph: "02",
+    blurb: "Introductory and advanced AI talks for technical and non-technical audiences — Generative AI to classical ML.",
+    bullets: ["Conferences & summits", "Internal company events", "Panels & podcasts"],
+  },
+  {
+    id: "workshops",
+    title: "Discovery & strategy workshops",
+    glyph: "03",
+    blurb: "Help your team find AI use cases tailored to your business and rank them by value, effort, and risk.",
+    bullets: ["AI opportunity mapping", "Prioritization & scoring", "Roadmap design"],
+  },
+  {
+    id: "sparring",
+    title: "Sparring partner",
+    glyph: "04",
+    blurb: "On-call advisor for management and working-level teams — strategy, hiring, architecture, hard calls.",
+    bullets: ["Exec sparring", "Hands-on review", "Hiring panels"],
+  },
+];
+
+const PROJECTS = [
+  {
+    title: "ForwardTacotron",
+    org: "Axel Springer / AS Ideas",
+    year: "2020",
+    img: "assets/employer_branding.jpg",
+    blurb: "Single-pass neural speech synthesis. Powered Axel Springer's brand voice, featured by NVIDIA.",
+    tag: "Speech / TTS",
+    href: "https://github.com/as-ideas/ForwardTacotron",
+  },
+  {
+    title: "Image Quality Assessment",
+    org: "idealo",
+    year: "2018",
+    img: "assets/filter_visualization.jpg",
+    blurb: "CNNs predicting aesthetic & technical quality of hotel photos. Open-sourced and widely cited.",
+    tag: "Computer Vision",
+    href: "https://devblogs.nvidia.com/deep-learning-hotel-aesthetics-photos/",
+  },
+  {
+    title: "Real-Time Object Recognition",
+    org: "Personal",
+    year: "2017",
+    img: "assets/object_detection.jpg",
+    blurb: "TensorFlow + OpenCV demo that became one of TDS' most-read computer vision tutorials.",
+    tag: "Computer Vision",
+    href: "https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32",
+  },
+  {
+    title: "Raccoon Detector",
+    org: "Personal",
+    year: "2017",
+    img: "assets/raccoon_detector.jpg",
+    blurb: "Trained an object detector on a dataset I collected and labelled myself. The internet's favourite raccoon.",
+    tag: "Dataset / Vision",
+    href: "https://github.com/datitran/raccoon_dataset",
+  },
+  {
+    title: "Face2face",
+    org: "Personal",
+    year: "2017",
+    img: "assets/face2face.jpg",
+    blurb: "Pix2Pix demo that translates webcam input into the German chancellor's face — early conditional GANs.",
+    tag: "Generative",
+    href: "https://github.com/datitran/face2face-demo",
+  },
+  {
+    title: "jupyter2slides",
+    org: "Personal",
+    year: "2017",
+    img: "assets/jupyter_reveal.gif",
+    blurb: "Cloud-native presentation slides with Jupyter + Reveal.js. Featured on freeCodeCamp.",
+    tag: "Tooling",
+    href: "https://github.com/datitran/jupyter2slides",
+  },
+];
+
+const WRITING = [
+  { title: "Building a Fast and Efficient Semantic Search System Using OpenVINO and Postgres", outlet: "Dev.to", date: "Oct 2024" },
+  { title: "Creating Robust Neural Speech Synthesis with ForwardTacotron", outlet: "NVIDIA Developer", date: "Aug 2020" },
+  { title: "Deep Learning for Classifying Hotel Aesthetics Photos", outlet: "NVIDIA Developer", date: "Oct 2018" },
+  { title: "What is Minimum Viable (Data) Product?", outlet: "idealo Tech Blog", date: "Jun 2018" },
+  { title: "Why the AI Hype Train is Already off the Rails", outlet: "Built to Adapt", date: "Aug 2017" },
+  { title: "How to train your own Object Detector with TensorFlow", outlet: "Towards Data Science", date: "Jul 2017" },
+  { title: "My two cents on what makes a good data scientist", outlet: "Towards Data Science", date: "Jul 2017" },
+  { title: "Building a Real-Time Object Recognition App", outlet: "Towards Data Science", date: "Jun 2017" },
+];
+
+const TALKS = [
+  { title: "Open Core, Pricing and AI product development", venue: "Beyond Coding Podcast", year: "2022", kind: "Podcast" },
+  { title: "How to Implement a Production-Ready Deep Learning Model in 12 Weeks", venue: "Øredev Conference", year: "2022", kind: "Keynote" },
+  { title: "Building a Data Science Team", venue: "DataTalks Club", year: "2020", kind: "Talk" },
+  { title: "Demystifying AI", venue: "mindsnack — Axel Springer", year: "2020", kind: "Podcast" },
+  { title: "Training a Machine to See What's Beautiful", venue: "WeAreDevelopers Vienna", year: "2019", kind: "Keynote" },
+  { title: "Becoming an AI-driven company", venue: "Digitale Leute Summit", year: "2019", kind: "Talk" },
+  { title: "From ML Research to Production — the Autobahn Way", venue: "EGG Germany", year: "2019", kind: "Keynote" },
+  { title: "How you really get your data science models into production", venue: "PyData San Francisco", year: "2016", kind: "Talk" },
+];
+
+const COMPANIES = [
+  "Axel Springer", "idealo", "Pivotal", "Beiersdorf", "Bertelsmann", "NVIDIA", "AWS",
+];
+
+const TESTIMONIALS = [
+  {
+    quote: "Dat is the rare blend of deep technical chops and senior leadership judgement. He set up our AI division from scratch and shipped open source the whole field uses.",
+    name: "Former Axel Springer colleague",
+    role: "VP, Engineering",
+  },
+  {
+    quote: "Pragmatic, no-nonsense, and unusually good at translating between exec strategy and what an ML team can actually deliver next quarter.",
+    name: "Consulting client",
+    role: "CTO, fintech",
+  },
+  {
+    quote: "Best keynote we had all year — funny, technical, and zero hype. Half the room found him on LinkedIn before he left the stage.",
+    name: "Conference organizer",
+    role: "Programme committee",
+  },
+];
+
+const STATS = [
+  { label: "Years in tech leadership", value: "15+" },
+  { label: "LinkedIn followers", value: "76k+" },
+  { label: "Talks & podcasts", value: "26+" },
+  { label: "Open-source repos", value: "12+" },
+];
+
+window.DAT = DAT;
+window.SERVICES = SERVICES;
+window.PROJECTS = PROJECTS;
+window.WRITING = WRITING;
+window.TALKS = TALKS;
+window.COMPANIES = COMPANIES;
+window.TESTIMONIALS = TESTIMONIALS;
+window.STATS = STATS;

@@ -1,0 +1,115 @@
+@use '../../styles/zine-tokens' as *;
+
+.zine-projects {
+  padding: $section-pad;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+
+  &__card {
+    color: var(--ink);
+    text-decoration: none;
+    display: block;
+    border: $border-w solid var(--ink-line);
+    background: var(--paper);
+    padding: 14px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color .9s, border-color .6s;
+
+    &:hover,
+    &:focus-visible {
+      transform: translate(-4px, -4px) !important;
+      box-shadow: 12px 12px 0 var(--shadow-color, var(--pink)) !important;
+      outline: none;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    border: $border-w-thin solid var(--ink-line);
+    background: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $mono;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+    z-index: 2;
+  }
+
+  &__card:hover &__badge {
+    background: var(--ink);
+    color: var(--paper);
+    transform: rotate(8deg);
+  }
+
+  &__card:hover &__title {
+    color: var(--blue);
+  }
+
+  &__img {
+    aspect-ratio: 4/3;
+    background-size: cover;
+    background-position: center;
+    filter: contrast(1.1);
+    transition: filter .6s;
+  }
+
+  &__meta {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $mono;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 6px 0;
+    letter-spacing: -0.02em;
+    transition: color 0.15s ease;
+  }
+
+  &__blurb {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__tag {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-projects {
+    padding: $section-pad-mobile;
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .zine-projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
