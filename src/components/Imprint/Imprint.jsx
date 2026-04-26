@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ZineNav from '../ZineNav/ZineNav';
 import ZineFooter from '../ZineFooter/ZineFooter';
 import './Imprint.scss';
 
-const Imprint = () => (
+const Imprint = () => {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
+  return (
   <div>
     <ZineNav isSubpage />
     <div className="legal-page">
@@ -40,6 +42,7 @@ const Imprint = () => (
     </div>
     <ZineFooter />
   </div>
-);
+  );
+};
 
 export default Imprint;
