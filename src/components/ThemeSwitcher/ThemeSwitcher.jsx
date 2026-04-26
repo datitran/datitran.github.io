@@ -6,7 +6,9 @@ const ThemeSwitcher = () => {
     return localStorage.getItem('dat-theme') || 'light';
   });
   const [busy, setBusy] = useState(false);
-  const [hintVisible, setHintVisible] = useState(true);
+  const [hintVisible, setHintVisible] = useState(() => {
+    return !localStorage.getItem('dat-hint-seen');
+  });
   const mountRef = useRef(null);
   const plateRef = useRef(null);
   const flashRef = useRef(null);
@@ -16,11 +18,15 @@ const ThemeSwitcher = () => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
-  // Auto-hide hint after 6s
+  // Auto-hide hint after 6s and mark as seen
   useEffect(() => {
-    const timer = setTimeout(() => setHintVisible(false), 6000);
+    if (!hintVisible) return;
+    const timer = setTimeout(() => {
+      setHintVisible(false);
+      localStorage.setItem('dat-hint-seen', '1');
+    }, 6000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [hintVisible]);
 
   const toggleTheme = useCallback(() => {
     if (busy) return;
@@ -58,6 +64,7 @@ const ThemeSwitcher = () => {
     localStorage.setItem('dat-theme', next);
     setTimeout(() => setBusy(false), 1200);
     setHintVisible(false);
+    localStorage.setItem('dat-hint-seen', '1');
   }, [busy, theme]);
 
   const handleKeyDown = useCallback((e) => {
