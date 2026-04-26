@@ -1,8 +1,6 @@
 import React from 'react';
-import { COMPANIES, MARQUEE_SERVICES } from '../data/zine-data';
 import ZineNav from '../components/ZineNav/ZineNav';
 import Hero from '../components/Hero/Hero';
-import Marquee from '../components/Marquee/Marquee';
 import StatsBand from '../components/StatsBand/StatsBand';
 import ZineAbout from '../components/ZineAbout/ZineAbout';
 import ZineServices from '../components/ZineServices/ZineServices';
@@ -20,12 +18,10 @@ const ZinePage = () => (
     <ZineNav />
     <div className="zine-page__body">
       <Hero />
-      <Marquee items={MARQUEE_SERVICES} bg="#0e0e0e" color="#fbf6ee" accent="#ff3da7" />
       <StatsBand />
       <ZineAbout />
       <ZineServices />
       <ZineCompanies />
-      <Marquee items={COMPANIES} bg="#fbf6ee" color="#0e0e0e" accent="#1f4dff" />
       <ZineProjects />
       <PullQuote />
       <ZineWriting />

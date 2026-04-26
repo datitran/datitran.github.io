@@ -155,7 +155,7 @@ export const STATS = [
   { label: "Years in tech leadership", value: "20+" },
   { label: "LinkedIn followers", value: "76k+" },
   { label: "Talks & podcasts", value: "100+" },
-  { label: "Open-source repos", value: "12+" },
+  { label: "GitHub stars", value: "5k+" },
 ];
 
 export const OSS_REPOS = [
