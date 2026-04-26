@@ -31,12 +31,6 @@
     color: $pink;
   }
 
-  &__subtitle {
-    font-family: $mono;
-    font-size: 11px;
-    color: rgba(14, 14, 14, 0.6);
-  }
-
   &__links {
     display: flex;
     gap: 18px;
@@ -84,9 +78,6 @@
     }
   }
 
-  &__cta {
-    flex-shrink: 0;
-  }
 }
 
 @media (max-width: 900px) {
@@ -116,8 +107,5 @@
       }
     }
 
-    &__cta {
-      order: 3;
-    }
   }
 }

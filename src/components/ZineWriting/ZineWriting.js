@@ -8,7 +8,7 @@ const PINK = '#ff3da7';
 const ZineWriting = () => (
   <section id="writing" className="zine-writing">
     <SectionHeader chapter={4} chapterColor={PINK}>
-      BACK <span style={{ color: PINK, fontStyle: 'italic' }}>ISSUES</span>.
+      THINGS I'VE <span style={{ color: PINK, fontStyle: 'italic' }}>WRITTEN</span>.
     </SectionHeader>
     <div className="zine-writing__table">
       {WRITING.map((w, i) => (

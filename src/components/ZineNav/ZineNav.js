@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Sticker from '../Sticker/Sticker';
 import './ZineNav.scss';
 
 const NAV_LINKS = [
@@ -34,7 +33,6 @@ class ZineNav extends Component {
           ) : (
             <a href="#" className="zine-nav__brand">DAT<span className="zine-nav__brand-bang">!</span></a>
           )}
-          <span className="zine-nav__subtitle">// vol. III · personal magazine</span>
         </div>
         <button
           className={`zine-nav__burger ${menuOpen ? 'zine-nav__burger--open' : ''}`}
@@ -51,9 +49,6 @@ class ZineNav extends Component {
             <Link to="/" className="zine-nav__link">Home</Link>
           )}
         </nav>
-        <div className="zine-nav__cta">
-          <Sticker color="#1f4dff" rot={-2}>● open for q3</Sticker>
-        </div>
       </header>
     );
   }

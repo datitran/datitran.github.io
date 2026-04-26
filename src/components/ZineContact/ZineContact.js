@@ -9,7 +9,7 @@ const INK = '#0e0e0e';
 
 const ZineContact = () => (
   <section id="contact" className="zine-contact">
-    <Sticker color={BLUE} rot={-5}>letters to the editor</Sticker>
+    <Sticker color={BLUE} rot={-5}>get in touch</Sticker>
     <h2 className="zine-contact__title">
       WRITE<span style={{ color: PINK }}>!</span> ME<span style={{ color: BLUE }}>!</span>
     </h2>

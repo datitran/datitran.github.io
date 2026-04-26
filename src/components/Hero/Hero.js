@@ -10,10 +10,6 @@ const PAPER = '#fbf6ee';
 
 const Hero = () => (
   <section className="hero">
-    <Sticker color={PINK} rot={-6} style={{ position: 'absolute', top: 28, right: 60 }}>NEW! VOL.III</Sticker>
-    <div className="hero__label">
-      The Dat Tran Personal Magazine №III · Berlin · 2026
-    </div>
     <h1 className="hero__title">
       HI<span className="hero__pink">!</span><br />
       I'M <span className="hero__blue">DAT</span>.
