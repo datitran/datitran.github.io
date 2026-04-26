@@ -17,7 +17,7 @@
   }
 
   &__card {
-    padding: 28px;
+    padding: 22px;
 
     &--even {
       background: $paper;
@@ -42,7 +42,7 @@
   &__glyph {
     font-family: $display;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 40px;
     line-height: 1;
     font-style: italic;
   }
@@ -50,8 +50,8 @@
   &__title {
     font-family: $display;
     font-weight: 700;
-    font-size: 32px;
-    margin: 14px 0 10px;
+    font-size: 24px;
+    margin: 10px 0 8px;
     letter-spacing: -0.02em;
   }
 

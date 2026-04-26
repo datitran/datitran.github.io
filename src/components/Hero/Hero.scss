@@ -1,17 +1,17 @@
 @import '../../styles/zine-tokens';
 
 .hero {
-  padding: 60px 32px 50px;
+  padding: 36px 28px 44px;
   border-bottom: $border-w solid $ink;
   position: relative;
 
   &__title {
     font-family: $display;
     font-weight: 700;
-    font-size: 240px;
-    line-height: 0.78;
+    font-size: clamp(72px, 11vw, 132px);
+    line-height: 0.82;
     letter-spacing: -0.05em;
-    margin: 20px 0 30px;
+    margin: 12px 0 24px;
   }
 
   &__pink { color: $pink; }
@@ -23,17 +23,17 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: 1.6fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1.55fr 1fr;
+    gap: 36px;
     align-items: end;
   }
 
   &__intro {
-    font-size: 24px;
-    line-height: 1.35;
+    font-size: 18px;
+    line-height: 1.45;
     margin: 0;
     font-weight: 500;
-    max-width: 760px;
+    max-width: 600px;
   }
 
   &__email {
@@ -44,17 +44,21 @@
   }
 
   &__tags {
-    margin-top: 24px;
+    margin-top: 20px;
     display: flex;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
   }
 
   &__photo-wrap {
     position: relative;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
   }
 
   &__photo {
+    width: 100%;
     aspect-ratio: 3/4;
     background-size: cover;
     background-position: center;
@@ -67,35 +71,24 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 40px 16px 30px;
+    padding: 32px 16px 28px;
 
     &__title {
-      font-size: 80px;
+      font-size: 72px;
     }
 
     &__grid {
       grid-template-columns: 1fr;
-      gap: 30px;
+      gap: 28px;
     }
 
     &__intro {
-      font-size: 18px;
+      font-size: 17px;
     }
 
-    &__photo {
-      max-width: 280px;
-    }
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .hero {
-    &__title {
-      font-size: 140px;
-    }
-
-    &__intro {
-      font-size: 20px;
+    &__photo-wrap {
+      max-width: 240px;
+      margin-left: 0;
     }
   }
 }

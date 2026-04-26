@@ -1,7 +1,7 @@
 @import '../../styles/zine-tokens';
 
 .pull-quote {
-  padding: 80px 32px;
+  padding: 56px 28px;
   background: $pink;
   color: $ink;
   border-bottom: $border-w solid $ink;
@@ -18,7 +18,7 @@
   &__text {
     font-family: $display;
     font-weight: 700;
-    font-size: 72px;
+    font-size: clamp(32px, 4.4vw, 44px);
     line-height: 1.05;
     letter-spacing: -0.03em;
     margin: 0;

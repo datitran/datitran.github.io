@@ -1,14 +1,14 @@
 @import '../../styles/zine-tokens';
 
 .zine-contact {
-  padding: 100px 32px 60px;
+  padding: 64px 28px 48px;
   text-align: center;
   border-bottom: $border-w solid $ink;
 
   &__title {
     font-family: $display;
     font-weight: 700;
-    font-size: 200px;
+    font-size: clamp(72px, 11vw, 124px);
     letter-spacing: -0.05em;
     line-height: 0.85;
     margin: 24px 0;
@@ -18,7 +18,7 @@
   &__email {
     font-family: $display;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     color: $ink;
     text-decoration: underline;
     text-decoration-thickness: 4px;
@@ -41,11 +41,7 @@
 
 @media (max-width: 768px) {
   .zine-contact {
-    padding: 60px 16px 40px;
-
-    &__title {
-      font-size: 72px;
-    }
+    padding: 48px 16px 36px;
 
     &__email {
       font-size: 22px;
@@ -55,11 +51,5 @@
       margin-top: 30px;
       gap: 12px;
     }
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .zine-contact__title {
-    font-size: 140px;
   }
 }

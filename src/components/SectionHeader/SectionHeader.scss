@@ -9,7 +9,7 @@
   &__title {
     font-family: $display;
     font-weight: 700;
-    font-size: 96px;
+    font-size: clamp(40px, 6.2vw, 60px);
     letter-spacing: -0.04em;
     margin: 0;
     font-style: italic;

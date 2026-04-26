@@ -11,7 +11,7 @@ const ZineContact = () => (
   <section id="contact" className="zine-contact">
     <Sticker color={BLUE} rot={-5}>get in touch</Sticker>
     <h2 className="zine-contact__title">
-      WRITE<span style={{ color: PINK }}>!</span> ME<span style={{ color: BLUE }}>!</span>
+      Say hi<span style={{ color: PINK }}>!</span>
     </h2>
     <a href={`mailto:${DAT.email}`} className="zine-contact__email">{DAT.email}</a>
     <div className="zine-contact__socials">
