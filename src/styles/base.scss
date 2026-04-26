@@ -40,6 +40,23 @@ img {
   to { transform: translateX(-33.333%); }
 }
 
+// Page layout — constrain sections as blocks
+.zine-page {
+  &__body {
+    max-width: $max-width;
+    margin: 0 auto;
+    border-left: $border-w solid $ink;
+    border-right: $border-w solid $ink;
+  }
+}
+
+@media (max-width: 768px) {
+  .zine-page__body {
+    border-left: none;
+    border-right: none;
+  }
+}
+
 // Sticker utility
 .sticker {
   display: inline-block;

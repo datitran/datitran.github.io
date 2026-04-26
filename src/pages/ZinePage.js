@@ -16,21 +16,23 @@ import ZineContact from '../components/ZineContact/ZineContact';
 import ZineFooter from '../components/ZineFooter/ZineFooter';
 
 const ZinePage = () => (
-  <div>
+  <div className="zine-page">
     <ZineNav />
-    <Hero />
-    <Marquee items={MARQUEE_SERVICES} bg="#0e0e0e" color="#fbf6ee" accent="#ff3da7" />
-    <StatsBand />
-    <ZineAbout />
-    <ZineServices />
-    <ZineCompanies />
-    <Marquee items={COMPANIES} bg="#fbf6ee" color="#0e0e0e" accent="#1f4dff" />
-    <ZineProjects />
-    <PullQuote />
-    <ZineWriting />
-    <ZineTalks />
-    <ZineOSS />
-    <ZineContact />
+    <div className="zine-page__body">
+      <Hero />
+      <Marquee items={MARQUEE_SERVICES} bg="#0e0e0e" color="#fbf6ee" accent="#ff3da7" />
+      <StatsBand />
+      <ZineAbout />
+      <ZineServices />
+      <ZineCompanies />
+      <Marquee items={COMPANIES} bg="#fbf6ee" color="#0e0e0e" accent="#1f4dff" />
+      <ZineProjects />
+      <PullQuote />
+      <ZineWriting />
+      <ZineTalks />
+      <ZineOSS />
+      <ZineContact />
+    </div>
     <ZineFooter />
   </div>
 );
