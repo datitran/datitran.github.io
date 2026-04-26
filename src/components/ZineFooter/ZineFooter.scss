@@ -14,18 +14,23 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  background: var(--paper);
+  border-left: $border-w solid var(--ink-line);
+  border-right: $border-w solid var(--ink-line);
+  border-bottom: $border-w solid var(--ink-line);
+  transition: background-color .9s, border-color .6s;
 
   &__link {
-    color: $ink;
+    color: var(--ink);
     text-decoration: underline;
     margin-right: 12px;
     transition: background 0.15s ease, color 0.15s ease;
 
     &:hover,
     &:focus-visible {
-      background: $ink;
-      color: $paper;
-      box-shadow: 0 0 0 3px $ink;
+      background: var(--ink);
+      color: var(--paper);
+      box-shadow: 0 0 0 3px var(--ink);
     }
   }
 }
@@ -36,5 +41,12 @@
     flex-direction: column;
     text-align: center;
     gap: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .zine-footer {
+    border-left: none;
+    border-right: none;
   }
 }

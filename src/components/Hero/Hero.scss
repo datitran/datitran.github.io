@@ -2,8 +2,9 @@
 
 .hero {
   padding: 36px 28px 44px;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
   position: relative;
+  transition: border-color .6s ease;
 
   &__title {
     font-family: $display;
@@ -14,10 +15,10 @@
     margin: 12px 0 24px;
   }
 
-  &__pink { color: $pink; }
+  &__pink { color: var(--pink); }
 
   &__blue {
-    color: $blue;
+    color: var(--blue);
     font-style: italic;
   }
 
@@ -37,10 +38,10 @@
   }
 
   &__email {
-    color: $pink;
+    color: var(--pink);
     font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: $pink;
+    text-decoration-color: var(--pink);
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
     cursor: pointer;
@@ -48,10 +49,10 @@
 
     &:hover,
     &:focus-visible {
-      background: $pink;
-      color: $paper;
-      text-decoration-color: $paper;
-      box-shadow: 0 0 0 3px $pink;
+      background: var(--pink);
+      color: var(--paper);
+      text-decoration-color: var(--paper);
+      box-shadow: 0 0 0 3px var(--pink);
     }
   }
 
@@ -74,10 +75,11 @@
     aspect-ratio: 3/4;
     background-size: cover;
     background-position: center;
-    filter: grayscale(1) contrast(1.3);
-    border: $border-w solid $ink;
+    filter: var(--photo-filter);
+    border: $border-w solid var(--ink-line);
     transform: rotate(2deg);
-    box-shadow: 8px 8px 0 $blue;
+    box-shadow: 8px 8px 0 var(--blue);
+    transition: filter .6s, box-shadow .6s, border-color .6s;
   }
 }
 

@@ -2,11 +2,8 @@ import React from 'react';
 import { TALKS } from '../../data/zine-data';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Sticker from '../Sticker/Sticker';
+import { PINK, BLUE, INK } from '../../styles/theme-vars';
 import './ZineTalks.scss';
-
-const PINK = '#ff3da7';
-const BLUE = '#1f4dff';
-const INK = '#0e0e0e';
 
 const kindColor = (kind) => kind === 'Keynote' ? PINK : kind === 'Podcast' ? BLUE : INK;
 

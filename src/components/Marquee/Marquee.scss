@@ -3,8 +3,9 @@
 .marquee {
   overflow: hidden;
   padding: 14px 0;
-  border-top: $border-w solid $ink;
-  border-bottom: $border-w solid $ink;
+  border-top: $border-w solid var(--ink-line);
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
 
   &__track {
     display: inline-flex;

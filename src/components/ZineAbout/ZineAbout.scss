@@ -2,7 +2,8 @@
 
 .zine-about {
   padding: $section-pad;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
 
   &__grid {
     display: grid;
@@ -24,32 +25,32 @@
     transition: background 0.15s ease, color 0.15s ease, text-decoration-thickness 0.15s ease;
 
     &--blue {
-      color: $blue;
+      color: var(--blue);
       font-weight: 600;
-      text-decoration-color: $blue;
+      text-decoration-color: var(--blue);
 
       &:hover,
       &:focus-visible {
-        background: $blue;
-        color: $paper;
-        text-decoration-color: $paper;
+        background: var(--blue);
+        color: var(--paper);
+        text-decoration-color: var(--paper);
         text-decoration-thickness: 3px;
-        box-shadow: 0 0 0 3px $blue;
+        box-shadow: 0 0 0 3px var(--blue);
       }
     }
 
     &--pink {
-      color: $pink;
+      color: var(--pink);
       font-weight: 700;
-      text-decoration-color: $pink;
+      text-decoration-color: var(--pink);
       text-decoration-thickness: 3px;
 
       &:hover,
       &:focus-visible {
-        background: $pink;
-        color: $paper;
-        text-decoration-color: $paper;
-        box-shadow: 0 0 0 3px $pink;
+        background: var(--pink);
+        color: var(--paper);
+        text-decoration-color: var(--paper);
+        box-shadow: 0 0 0 3px var(--pink);
       }
     }
 

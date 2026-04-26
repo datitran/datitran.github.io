@@ -1,11 +1,8 @@
 import React from 'react';
 import { COMPANIES } from '../../data/zine-data';
 import Sticker from '../Sticker/Sticker';
+import { PINK, BLUE, INK, TINT_PINK } from '../../styles/theme-vars';
 import './ZineCompanies.scss';
-
-const PINK = '#ff3da7';
-const BLUE = '#1f4dff';
-const INK = '#0e0e0e';
 
 const ZineCompanies = () => (
   <section className="zine-companies">
@@ -23,7 +20,7 @@ const ZineCompanies = () => (
           style={{
             fontStyle: i % 2 === 0 ? 'italic' : 'normal',
             color: i % 3 === 0 ? PINK : i % 3 === 1 ? BLUE : INK,
-            background: i % 2 === 0 ? 'transparent' : 'rgba(255,61,167,0.05)',
+            background: i % 2 === 0 ? 'transparent' : TINT_PINK,
           }}
         >
           {c}

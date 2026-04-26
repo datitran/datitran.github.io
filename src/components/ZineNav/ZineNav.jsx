@@ -39,7 +39,7 @@ class ZineNav extends Component {
       <header className="zine-nav">
         <div className="zine-nav__left">
           {isSubpage ? (
-            <Link to="/" className="zine-nav__brand">DAT<span className="zine-nav__brand-bang">!</span></Link>
+            <Link to="/" className="zine-nav__brand" onClick={() => window.scrollTo(0, 0)}>DAT<span className="zine-nav__brand-bang">!</span></Link>
           ) : (
             <a href="#" className="zine-nav__brand" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>DAT<span className="zine-nav__brand-bang">!</span></a>
           )}
@@ -56,7 +56,7 @@ class ZineNav extends Component {
             <a key={label} href={href} className="zine-nav__link" onClick={(e) => this.handleAnchorClick(e, href)}>{label}</a>
           ))}
           {isSubpage && (
-            <Link to="/" className="zine-nav__link">Home</Link>
+            <Link to="/" className="zine-nav__link" onClick={() => window.scrollTo(0, 0)}>Home</Link>
           )}
         </nav>
       </header>

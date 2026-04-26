@@ -2,7 +2,8 @@
 
 .zine-companies {
   padding: 40px 28px;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
 
   &__header {
     display: flex;
@@ -21,13 +22,14 @@
 
   &__accent {
     font-style: italic;
-    color: $blue;
+    color: var(--blue);
   }
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    border: $border-w solid $ink;
+    border: $border-w solid var(--ink-line);
+    transition: border-color .6s;
   }
 
   &__cell {
@@ -37,7 +39,7 @@
     font-weight: 700;
     font-size: 17px;
     letter-spacing: -0.01em;
-    border-right: $border-w solid $ink;
+    border-right: $border-w solid var(--ink-line);
 
     &:last-child {
       border-right: none;
@@ -60,7 +62,7 @@
     &__cell {
       padding: 16px 8px;
       font-size: 16px;
-      border-bottom: $border-w-thin solid $ink;
+      border-bottom: $border-w-thin solid var(--ink-line);
     }
   }
 }

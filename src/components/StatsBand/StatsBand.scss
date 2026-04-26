@@ -2,12 +2,13 @@
 
 .stats-band {
   padding: 22px 28px;
-  background: $ink;
-  color: $paper;
+  background: var(--ink);
+  color: var(--on-ink);
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: background-color .9s, color .9s, border-color .6s;
 
   &__item {
     display: flex;

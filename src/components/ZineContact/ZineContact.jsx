@@ -1,11 +1,8 @@
 import React from 'react';
 import { DAT } from '../../data/zine-data';
 import Sticker from '../Sticker/Sticker';
+import { PINK, BLUE, INK } from '../../styles/theme-vars';
 import './ZineContact.scss';
-
-const PINK = '#ff3da7';
-const BLUE = '#1f4dff';
-const INK = '#0e0e0e';
 
 const ZineContact = () => (
   <section id="contact" className="zine-contact">

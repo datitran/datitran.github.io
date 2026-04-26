@@ -2,7 +2,8 @@
 
 .zine-services {
   padding: $section-pad;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
 
   &__sub {
     font-size: 17px;
@@ -13,23 +14,24 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: $border-w solid $ink;
+    border: $border-w solid var(--ink-line);
+    transition: border-color .6s;
   }
 
   &__card {
     padding: 22px;
 
     &--even {
-      background: $paper;
-      border-right: $border-w solid $ink;
+      background: var(--paper);
+      border-right: $border-w solid var(--ink-line);
     }
 
     &--odd {
-      background: rgba(31, 77, 255, 0.04);
+      background: var(--tint-blue);
     }
 
     &:nth-child(-n+2) {
-      border-bottom: $border-w solid $ink;
+      border-bottom: $border-w solid var(--ink-line);
     }
 
     &-top {
@@ -78,7 +80,7 @@
     }
 
     &__card {
-      border-bottom: $border-w solid $ink;
+      border-bottom: $border-w solid var(--ink-line);
 
       &--even {
         border-right: none;

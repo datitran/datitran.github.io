@@ -1,0 +1,44 @@
+// ============================================================
+// THEME TOKENS — CSS custom properties for light & dark themes
+// ============================================================
+
+:root,
+:root[data-theme="light"] {
+  --paper:        #fbf6ee;
+  --paper-2:      #f4ecdf;
+  --ink:          #0e0e0e;
+  --ink-soft:     rgba(14, 14, 14, 0.55);
+  --ink-line:     #0e0e0e;
+  --on-ink:       #fbf6ee;
+  --blue:         #1f4dff;
+  --pink:         #ff3da7;
+  --tint-blue:    rgba(31, 77, 255, 0.04);
+  --tint-blue-2:  rgba(31, 77, 255, 0.06);
+  --tint-pink:    rgba(255, 61, 167, 0.05);
+  --photo-filter: grayscale(1) contrast(1.3);
+
+  --room-from:    #fbf6ee;
+  --room-to:      #f0e8d6;
+  --halo:         rgba(255, 224, 138, 0);
+  --halo-strength: 0;
+}
+
+:root[data-theme="dark"] {
+  --paper:        #14131a;
+  --paper-2:      #1c1b22;
+  --ink:          #f3eedf;
+  --ink-soft:     rgba(243, 238, 223, 0.55);
+  --ink-line:     #f3eedf;
+  --on-ink:       #14131a;
+  --blue:         #6f88ff;
+  --pink:         #ff5fb4;
+  --tint-blue:    rgba(111, 136, 255, 0.07);
+  --tint-blue-2:  rgba(111, 136, 255, 0.10);
+  --tint-pink:    rgba(255, 95, 180, 0.07);
+  --photo-filter: grayscale(1) contrast(1.15) brightness(0.95);
+
+  --room-from:    #181621;
+  --room-to:      #0a0a10;
+  --halo:         rgba(255, 214, 110, 0.40);
+  --halo-strength: 1;
+}

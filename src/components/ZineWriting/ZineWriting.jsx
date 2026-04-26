@@ -1,9 +1,8 @@
 import React from 'react';
 import { WRITING } from '../../data/zine-data';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import { PINK } from '../../styles/theme-vars';
 import './ZineWriting.scss';
-
-const PINK = '#ff3da7';
 
 const ZineWriting = () => (
   <section id="writing" className="zine-writing">

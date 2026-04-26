@@ -2,8 +2,9 @@
 
 .zine-oss {
   padding: $section-pad;
-  border-bottom: $border-w solid $ink;
-  background: rgba(31, 77, 255, 0.04);
+  border-bottom: $border-w solid var(--ink-line);
+  background: var(--tint-blue);
+  transition: background-color .9s, border-color .6s;
 
   &__intro {
     font-size: 17px;
@@ -13,11 +14,11 @@
   }
 
   &__link {
-    color: $blue;
+    color: var(--blue);
     font-family: $mono;
     font-weight: 700;
     text-decoration: underline;
-    text-decoration-color: $blue;
+    text-decoration-color: var(--blue);
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
     cursor: pointer;
@@ -25,10 +26,10 @@
 
     &:hover,
     &:focus-visible {
-      background: $blue;
-      color: $paper;
-      text-decoration-color: $paper;
-      box-shadow: 0 0 0 3px $blue;
+      background: var(--blue);
+      color: var(--paper);
+      text-decoration-color: var(--paper);
+      box-shadow: 0 0 0 3px var(--blue);
     }
   }
 
@@ -39,20 +40,20 @@
   }
 
   &__card {
-    color: $ink;
+    color: var(--ink);
     text-decoration: none;
     display: block;
-    border: $border-w solid $ink;
-    background: $paper;
+    border: $border-w solid var(--ink-line);
+    background: var(--paper);
     padding: 18px;
     position: relative;
     cursor: pointer;
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color .9s, border-color .6s;
 
     &:hover,
     &:focus-visible {
       transform: translate(-4px, -4px);
-      box-shadow: 10px 10px 0 var(--shadow-color, $pink) !important;
+      box-shadow: 10px 10px 0 var(--shadow-color, var(--pink)) !important;
       outline: none;
     }
   }
@@ -63,8 +64,8 @@
     right: 10px;
     width: 28px;
     height: 28px;
-    border: $border-w-thin solid $ink;
-    background: $paper;
+    border: $border-w-thin solid var(--ink-line);
+    background: var(--paper);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,8 +77,8 @@
   }
 
   &__card:hover &__badge {
-    background: $ink;
-    color: $paper;
+    background: var(--ink);
+    color: var(--paper);
     transform: rotate(8deg);
   }
 
@@ -87,7 +88,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: rgba(14, 14, 14, 0.55);
+    color: var(--ink-soft);
   }
 
   &__repo-name {

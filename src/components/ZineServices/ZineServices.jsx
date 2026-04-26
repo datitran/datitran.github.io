@@ -2,10 +2,8 @@ import React from 'react';
 import { SERVICES } from '../../data/zine-data';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Sticker from '../Sticker/Sticker';
+import { PINK, BLUE } from '../../styles/theme-vars';
 import './ZineServices.scss';
-
-const PINK = '#ff3da7';
-const BLUE = '#1f4dff';
 
 const ZineServices = () => (
   <section id="services" className="zine-services">

@@ -2,9 +2,10 @@
 
 .pull-quote {
   padding: 56px 28px;
-  background: $pink;
-  color: $ink;
-  border-bottom: $border-w solid $ink;
+  background: var(--pink);
+  color: #14131a;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: background-color .6s, color .6s, border-color .6s;
 
   &__label {
     font-family: $mono;
@@ -23,6 +24,13 @@
     letter-spacing: -0.03em;
     margin: 0;
     font-style: italic;
+  }
+
+  &__highlight {
+    background: #14131a;
+    color: var(--pink);
+    padding: 0 8px;
+    font-style: normal;
   }
 
   &__attr {

@@ -1,8 +1,9 @@
 import React from 'react';
 import { STATS } from '../../data/zine-data';
+import { PINK, BLUE } from '../../styles/theme-vars';
 import './StatsBand.scss';
 
-const COLORS = ['#ff3da7', '#1f4dff'];
+const COLORS = [PINK, BLUE];
 
 const StatsBand = () => (
   <section className="stats-band">

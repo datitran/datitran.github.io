@@ -2,16 +2,17 @@
 
 .zine-nav {
   padding: 14px 32px;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $paper;
+  background: var(--paper);
   position: sticky;
   top: 0;
   z-index: 50;
   max-width: $max-width;
   margin: 0 auto;
+  transition: background-color .9s ease, border-color .6s ease;
 
   &__left {
     display: flex;
@@ -25,12 +26,12 @@
     font-size: 32px;
     font-style: italic;
     letter-spacing: -0.02em;
-    color: $ink;
+    color: var(--ink);
     text-decoration: none;
   }
 
   &__brand-bang {
-    color: $pink;
+    color: var(--pink);
   }
 
   &__links {
@@ -43,11 +44,11 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: $ink;
+    color: var(--ink);
     text-decoration: none;
     position: relative;
     padding: 4px 0;
-    background-image: linear-gradient($ink, $ink);
+    background-image: linear-gradient(var(--ink), var(--ink));
     background-size: 0% 2px;
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -60,14 +61,14 @@
 
     &--active {
       background-size: 100% 2px;
-      color: $blue;
+      color: var(--blue);
 
       &::before {
         content: '';
         display: inline-block;
         width: 6px;
         height: 6px;
-        background: $pink;
+        background: var(--pink);
         margin-right: 6px;
         transform: translateY(-2px);
       }
@@ -89,7 +90,7 @@
       position: absolute;
       height: 3px;
       width: 100%;
-      background: $ink;
+      background: var(--ink);
       left: 0;
       transition: 0.25s ease;
 

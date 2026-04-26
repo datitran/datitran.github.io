@@ -1,10 +1,8 @@
 import React from 'react';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import cvFile from '../../static/CV.pdf';
+import { PINK, BLUE } from '../../styles/theme-vars';
 import './ZineAbout.scss';
-
-const PINK = '#ff3da7';
-const BLUE = '#1f4dff';
 
 const ZineAbout = () => (
   <section id="about" className="zine-about">

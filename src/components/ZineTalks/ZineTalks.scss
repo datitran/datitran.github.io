@@ -2,37 +2,39 @@
 
 .zine-talks {
   padding: $section-pad;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: $border-w solid $ink;
+    border: $border-w solid var(--ink-line);
+    transition: border-color .6s;
   }
 
   &__card {
     padding: 20px 22px;
-    border-bottom: $border-w-thin solid $ink;
-    color: $ink;
+    border-bottom: $border-w-thin solid var(--ink-line);
+    color: var(--ink);
     text-decoration: none;
     display: block;
     cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease;
+    transition: background 0.15s ease, color 0.15s ease, border-color .6s;
 
     &:hover,
     &:focus-visible {
-      background: $ink;
-      color: $paper;
+      background: var(--ink);
+      color: var(--paper);
       outline: none;
     }
 
     &--even {
-      background: $paper;
-      border-right: $border-w-thin solid $ink;
+      background: var(--paper);
+      border-right: $border-w-thin solid var(--ink-line);
     }
 
     &--odd {
-      background: rgba(255, 61, 167, 0.05);
+      background: var(--tint-pink);
     }
 
     &:nth-last-child(-n+2) {
@@ -52,7 +54,7 @@
   }
 
   &__card:hover &__title {
-    color: $paper;
+    color: var(--paper);
   }
 
   &__card:hover &__venue {

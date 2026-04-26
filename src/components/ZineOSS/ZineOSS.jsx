@@ -1,11 +1,8 @@
 import React from 'react';
 import { DAT, OSS_REPOS } from '../../data/zine-data';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import { PINK, BLUE, INK } from '../../styles/theme-vars';
 import './ZineOSS.scss';
-
-const PINK = '#ff3da7';
-const BLUE = '#1f4dff';
-const INK = '#0e0e0e';
 
 const ZineOSS = () => (
   <section id="oss" className="zine-oss">

@@ -2,10 +2,12 @@
 
 .zine-writing {
   padding: $section-pad;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
 
   &__table {
-    border: $border-w solid $ink;
+    border: $border-w solid var(--ink-line);
+    transition: border-color .6s;
   }
 
   &__row {
@@ -14,16 +16,16 @@
     gap: 16px;
     padding: 18px 20px;
     align-items: center;
-    border-bottom: $border-w-thin solid $ink;
-    color: $ink;
+    border-bottom: $border-w-thin solid var(--ink-line);
+    color: var(--ink);
     text-decoration: none;
     cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease, border-color .6s;
 
     &:hover,
     &:focus-visible {
-      background: $ink;
-      color: $paper;
+      background: var(--ink);
+      color: var(--paper);
       transform: translateX(2px);
       outline: none;
     }
@@ -32,8 +34,8 @@
       border-bottom: none;
     }
 
-    &--even { background: $paper; }
-    &--odd { background: rgba(31, 77, 255, 0.06); }
+    &--even { background: var(--paper); }
+    &--odd { background: var(--tint-blue-2); }
   }
 
   &__arrow {
@@ -42,23 +44,23 @@
     font-size: 16px;
     text-align: right;
     transition: transform 0.18s ease;
-    color: $blue;
+    color: var(--blue);
   }
 
   &__row:hover &__arrow {
     transform: translateX(4px);
-    color: $pink;
+    color: var(--pink);
   }
 
   &__row:hover &__num {
-    color: $pink;
+    color: var(--pink);
   }
 
   &__num {
     font-family: $display;
     font-weight: 700;
     font-size: 30px;
-    color: $pink;
+    color: var(--pink);
     font-style: italic;
   }
 

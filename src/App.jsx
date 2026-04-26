@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ZinePage from './pages/ZinePage';
 import Imprint from './components/Imprint/Imprint';
 import Privacy from './components/Privacy/Privacy';
+import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher';
 
 const App = () => (
   <div className="App">
@@ -13,6 +14,7 @@ const App = () => (
         <Route path="/" element={<ZinePage />} />
       </Routes>
     </Router>
+    <ThemeSwitcher />
   </div>
 );
 

@@ -3,7 +3,8 @@
 .zine-contact {
   padding: 64px 28px 48px;
   text-align: center;
-  border-bottom: $border-w solid $ink;
+  border-bottom: $border-w solid var(--ink-line);
+  transition: border-color .6s;
 
   &__title {
     font-family: $display;
@@ -19,10 +20,10 @@
     font-family: $display;
     font-weight: 700;
     font-size: 28px;
-    color: $pink;
+    color: var(--pink);
     text-decoration: underline;
     text-decoration-thickness: 4px;
-    text-decoration-color: $pink;
+    text-decoration-color: var(--pink);
     text-underline-offset: 3px;
     letter-spacing: -0.01em;
     cursor: pointer;
@@ -30,10 +31,10 @@
 
     &:hover,
     &:focus-visible {
-      background: $pink;
-      color: $paper;
-      text-decoration-color: $paper;
-      box-shadow: 0 0 0 3px $pink;
+      background: var(--pink);
+      color: var(--paper);
+      text-decoration-color: var(--paper);
+      box-shadow: 0 0 0 3px var(--pink);
     }
   }
 
@@ -54,7 +55,7 @@
         transform: translate(-2px, -2px);
 
         .sticker {
-          box-shadow: 7px 7px 0 $ink;
+          box-shadow: 7px 7px 0 var(--ink-line);
         }
       }
     }

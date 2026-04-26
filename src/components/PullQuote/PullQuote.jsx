@@ -2,15 +2,12 @@ import React from 'react';
 import { TESTIMONIALS } from '../../data/zine-data';
 import './PullQuote.scss';
 
-const PINK = '#ff3da7';
-const INK = '#0e0e0e';
-
 const PullQuote = () => (
   <section className="pull-quote">
     <div className="pull-quote__label">★ What clients say ★</div>
     <blockquote className="pull-quote__text">
       "Dat is the rare blend of{' '}
-      <span style={{ background: INK, color: PINK, padding: '0 8px', fontStyle: 'normal' }}>deep technical chops</span>
+      <span className="pull-quote__highlight">deep technical chops</span>
       {' '}and senior leadership judgement."
     </blockquote>
     <div className="pull-quote__attr">

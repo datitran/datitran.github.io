@@ -1,4 +1,5 @@
 @use './zine-tokens' as *;
+@use './theme-tokens';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -15,13 +16,30 @@ html {
 }
 
 body {
-  background-color: $paper;
-  color: $ink;
+  background:
+    radial-gradient(ellipse 100% 70% at 50% -10%, var(--room-from), var(--room-to) 70%) fixed,
+    var(--paper);
+  color: var(--ink);
   font-family: $sans;
   font-size: 15px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color .9s ease, color .6s ease;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 1100px 700px at calc(100% - 60px) calc(100% - 80px), var(--halo), transparent 70%);
+  opacity: var(--halo-strength);
+  transition: opacity .9s ease;
+  mix-blend-mode: screen;
 }
 
 a {
@@ -38,6 +56,11 @@ img {
   display: block;
 }
 
+::selection {
+  background: var(--blue);
+  color: var(--on-ink);
+}
+
 // Marquee animation
 @keyframes zineScroll {
   from { transform: translateX(0); }
@@ -47,10 +70,14 @@ img {
 // Page layout — constrain sections as blocks
 .zine-page {
   &__body {
+    position: relative;
+    z-index: 1;
     max-width: $max-width;
     margin: 0 auto;
-    border-left: $border-w solid $ink;
-    border-right: $border-w solid $ink;
+    border-left: $border-w solid var(--ink-line);
+    border-right: $border-w solid var(--ink-line);
+    background: var(--paper);
+    transition: background-color .9s ease, border-color .6s ease;
   }
 }
 
@@ -64,7 +91,7 @@ img {
 // Sticker utility
 .sticker {
   display: inline-block;
-  background: $pink;
+  background: var(--pink);
   color: #fff;
   padding: 6px 14px;
   font-size: 13px;
@@ -72,5 +99,14 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   white-space: nowrap;
-  box-shadow: 4px 4px 0 $ink;
+  box-shadow: 4px 4px 0 var(--ink-line);
+  transition: box-shadow .6s ease;
+}
+
+:root[data-theme="dark"] .sticker {
+  color: var(--on-ink);
+}
+
+:root[data-theme="dark"] .sticker.sticker--ink {
+  color: var(--paper);
 }
