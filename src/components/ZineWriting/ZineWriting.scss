@@ -15,6 +15,8 @@
     padding: 18px 20px;
     align-items: baseline;
     border-bottom: $border-w-thin solid $ink;
+    color: $ink;
+    text-decoration: none;
 
     &:last-child {
       border-bottom: none;

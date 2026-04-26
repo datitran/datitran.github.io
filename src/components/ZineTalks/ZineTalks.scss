@@ -13,6 +13,9 @@
   &__card {
     padding: 20px 22px;
     border-bottom: $border-w-thin solid $ink;
+    color: $ink;
+    text-decoration: none;
+    display: block;
 
     &--even {
       background: $paper;

@@ -12,8 +12,11 @@ const ZineWriting = () => (
     </SectionHeader>
     <div className="zine-writing__table">
       {WRITING.map((w, i) => (
-        <div
+        <a
           key={i}
+          href={w.href}
+          target="_blank"
+          rel="noreferrer noopener"
           className={`zine-writing__row ${i % 2 === 0 ? 'zine-writing__row--even' : 'zine-writing__row--odd'}`}
         >
           <span className="zine-writing__num">
@@ -22,7 +25,7 @@ const ZineWriting = () => (
           <span className="zine-writing__title">{w.title}</span>
           <span className="zine-writing__outlet">{w.outlet}</span>
           <span className="zine-writing__date">{w.date}</span>
-        </div>
+        </a>
       ))}
     </div>
   </section>

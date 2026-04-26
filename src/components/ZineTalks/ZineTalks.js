@@ -17,8 +17,11 @@ const ZineTalks = () => (
     </SectionHeader>
     <div className="zine-talks__grid">
       {TALKS.map((t, i) => (
-        <div
+        <a
           key={i}
+          href={t.href}
+          target="_blank"
+          rel="noreferrer noopener"
           className={`zine-talks__card ${i % 2 === 0 ? 'zine-talks__card--even' : 'zine-talks__card--odd'}`}
         >
           <div className="zine-talks__card-top">
@@ -27,7 +30,7 @@ const ZineTalks = () => (
           </div>
           <div className="zine-talks__title">{t.title}</div>
           <div className="zine-talks__venue">{t.venue}</div>
-        </div>
+        </a>
       ))}
     </div>
   </section>

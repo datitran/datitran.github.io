@@ -22,6 +22,16 @@ class ZineNav extends Component {
     this.setState(prev => ({ menuOpen: !prev.menuOpen }));
   };
 
+  handleAnchorClick = (e, href) => {
+    e.preventDefault();
+    const id = href.replace('#', '');
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+    this.setState({ menuOpen: false });
+  };
+
   render() {
     const { menuOpen } = this.state;
     const { isSubpage } = this.props;
@@ -31,7 +41,7 @@ class ZineNav extends Component {
           {isSubpage ? (
             <Link to="/" className="zine-nav__brand">DAT<span className="zine-nav__brand-bang">!</span></Link>
           ) : (
-            <a href="#" className="zine-nav__brand">DAT<span className="zine-nav__brand-bang">!</span></a>
+            <a href="#" className="zine-nav__brand" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>DAT<span className="zine-nav__brand-bang">!</span></a>
           )}
         </div>
         <button
@@ -43,7 +53,7 @@ class ZineNav extends Component {
         </button>
         <nav className={`zine-nav__links ${menuOpen ? 'zine-nav__links--open' : ''}`}>
           {!isSubpage && NAV_LINKS.map(([label, href]) => (
-            <a key={label} href={href} className="zine-nav__link" onClick={() => this.setState({ menuOpen: false })}>{label}</a>
+            <a key={label} href={href} className="zine-nav__link" onClick={(e) => this.handleAnchorClick(e, href)}>{label}</a>
           ))}
           {isSubpage && (
             <Link to="/" className="zine-nav__link">Home</Link>

@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import cvFile from '../../static/CV.pdf';
 import './ZineAbout.scss';
 
 const PINK = '#ff3da7';
@@ -30,7 +31,7 @@ const ZineAbout = () => (
         </p>
         <p className="zine-about__cta">
           For a deeper dive into my work, please{' '}
-          <a href="#" className="zine-about__link zine-about__link--pink" style={{ fontWeight: 700 }}>view my CV →</a>
+          <a href={cvFile} target="_blank" rel="noreferrer noopener" className="zine-about__link zine-about__link--pink" style={{ fontWeight: 700 }}>view my CV →</a>
         </p>
       </div>
     </div>
