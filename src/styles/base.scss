@@ -1,4 +1,4 @@
-@import './zine-tokens';
+@use './zine-tokens' as *;
 
 *, *::before, *::after {
   box-sizing: border-box;

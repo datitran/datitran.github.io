@@ -1,4 +1,4 @@
-@import '../../styles/zine-tokens';
+@use '../../styles/zine-tokens' as *;
 
 .section-header {
   display: flex;
