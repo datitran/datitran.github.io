@@ -321,8 +321,10 @@
 // Responsive
 @media (max-width: 900px) {
   .switch-mount {
-    right: 12px;
-    bottom: 12px;
+    right: 24px;
+    bottom: 24px;
+    transform: scale(0.75);
+    transform-origin: bottom right;
   }
   .switch-hint {
     display: none;
