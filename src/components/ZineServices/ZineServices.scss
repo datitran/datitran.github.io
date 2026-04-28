@@ -5,10 +5,27 @@
   border-bottom: $border-w solid var(--ink-line);
   transition: border-color .6s;
 
-  &__sub {
-    font-size: 17px;
-    max-width: 760px;
-    margin: 0 0 28px;
+  &__chrome {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 4px 0 28px;
+    color: var(--ink);
+    opacity: 0.85;
+
+    &-rule {
+      flex: 1;
+      height: 0;
+      border-top: $border-w-thin solid var(--ink-line);
+    }
+
+    &-caption {
+      font-family: $mono;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
   }
 
   &__grid {
@@ -20,6 +37,8 @@
 
   &__card {
     padding: 22px;
+    display: flex;
+    flex-direction: column;
 
     &--even {
       background: var(--paper);
@@ -33,12 +52,21 @@
     &:nth-child(-n+2) {
       border-bottom: $border-w solid var(--ink-line);
     }
+  }
 
-    &-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  &__card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
   &__glyph {
@@ -49,12 +77,54 @@
     font-style: italic;
   }
 
+  &__course {
+    font-family: $mono;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border: $border-w-thin solid;
+    border-radius: 999px;
+    line-height: 1;
+  }
+
   &__title {
     font-family: $display;
     font-weight: 700;
-    font-size: 24px;
-    margin: 10px 0 8px;
+    font-size: 26px;
+    margin: 14px 0 10px;
     letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  &__meta {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 12px;
+    row-gap: 4px;
+    margin: 0 0 12px;
+    padding: 10px 12px;
+    border: $border-w-thin dashed var(--ink-line);
+    background: var(--paper);
+    font-size: 13px;
+
+    &-row {
+      display: contents;
+    }
+
+    dt {
+      font-family: $mono;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      align-self: center;
+      opacity: 0.7;
+    }
+
+    dd {
+      margin: 0;
+      font-weight: 600;
+    }
   }
 
   &__blurb {
@@ -69,11 +139,35 @@
     font-size: 14px;
     line-height: 1.7;
   }
+
+  &__footnote {
+    margin: 24px 0 0;
+    font-family: $mono;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  &__chef {
+    font-weight: 700;
+    border-bottom: 2px solid var(--pink);
+    padding-bottom: 1px;
+    transition: color .15s ease, border-color .15s ease;
+
+    &:hover {
+      color: var(--pink);
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .zine-services {
     padding: $section-pad-mobile;
+
+    &__chrome {
+      gap: 10px;
+      &-caption { font-size: 10px; }
+    }
 
     &__grid {
       grid-template-columns: 1fr;
@@ -91,12 +185,17 @@
       }
     }
 
+    &__card-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     &__glyph {
       font-size: 40px;
     }
 
     &__title {
-      font-size: 26px;
+      font-size: 24px;
     }
   }
 }

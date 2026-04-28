@@ -55,7 +55,7 @@ const ZineOSS = () => {
       </SectionHeader>
       <p className="zine-oss__intro">
         A handful of repositories I've shipped over the years — speech synthesis, computer vision, datasets, and the odd developer tool. All MIT, all on{' '}
-        <a href={DAT.github} className="zine-oss__link">github.com/datitran</a>.
+        <a href={DAT.github} target="_blank" rel="noreferrer noopener" className="zine-oss__link">github.com/datitran</a>.
       </p>
 
       <h3 className="zine-oss__sub-label">Open-Source — featured</h3>

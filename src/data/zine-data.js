@@ -20,7 +20,7 @@ export const DAT = {
   github: "https://github.com/datitran",
   medium: "https://medium.com/@datitran",
   twitter: "https://x.com/datitran",
-  followers: "76k+",
+  followers: "78k+",
   photo: leadershipImg,
 };
 
@@ -29,29 +29,49 @@ export const SERVICES = [
     id: "tdd",
     title: "Tech due diligence",
     glyph: "01",
+    course: "Starter",
+    audience: "Investors & acquirers",
+    format: "1–2 weeks · remote",
     blurb: "Code quality audits, architectural review, tech-stack and roadmap assessment for investors and acquirers.",
     bullets: ["Code & architecture review", "Tech stack assessment", "Roadmap evaluation"],
+    cta: "book a review",
+    ctaSubject: "Tech due diligence — booking",
   },
   {
     id: "talks",
     title: "Keynote talks",
     glyph: "02",
+    course: "Main",
+    audience: "Conferences & companies",
+    format: "30–60 min · in-person or remote",
     blurb: "Introductory and advanced AI talks for technical and non-technical audiences — Generative AI, classical ML to AI for business.",
     bullets: ["Conferences & summits", "Internal company events", "Panels & podcasts"],
+    cta: "book a talk",
+    ctaSubject: "Keynote talk — booking enquiry",
   },
   {
     id: "workshops",
     title: "Discovery & strategy workshops",
     glyph: "03",
+    course: "Main",
+    audience: "Product & exec teams",
+    format: "½–2 days · on-site preferred",
     blurb: "Help your team find AI use cases tailored to your business and rank them by value, effort, and risk.",
     bullets: ["AI opportunity mapping", "Prioritization & scoring", "Roadmap design"],
+    cta: "book a workshop",
+    ctaSubject: "Discovery workshop — booking enquiry",
   },
   {
     id: "sparring",
     title: "Sparring partner",
     glyph: "04",
+    course: "Chef's table",
+    audience: "Founders & execs",
+    format: "Retainer · monthly",
     blurb: "On-call advisor for management and working-level teams — strategy, hiring, architecture, hard calls.",
     bullets: ["Fractional CTO & exec sparring", "Hands-on review and delivery", "Talent assessment & hiring support"],
+    cta: "book sparring",
+    ctaSubject: "Sparring partner — engagement enquiry",
   },
 ];
 
@@ -236,7 +256,7 @@ export const TESTIMONIALS = [
 
 export const STATS = [
   { label: "Years in tech leadership", value: "20+" },
-  { label: "LinkedIn followers", value: "76k+" },
+  { label: "LinkedIn followers", value: "78k+" },
   { label: "Talks & podcasts", value: "100+" },
   { label: "GitHub stars", value: "10k+" },
 ];
