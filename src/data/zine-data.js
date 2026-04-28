@@ -181,7 +181,7 @@ export const INDUSTRY_PROJECTS = [
     org: "Various",
     year: "ongoing",
     img: idealoTeamImg,
-    headline: "1:1s, career plans, and Springboard students",
+    headline: "1:1s, career plans, and coaching",
     bullets: [
       "Introduced individual career development plans with weekly 1:1s for faster, goal-oriented progression",
       "Mentored several students from online courses such as Springboard",

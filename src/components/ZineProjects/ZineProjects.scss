@@ -133,12 +133,8 @@
     background: var(--paper);
     display: flex;
     flex-direction: column;
-    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color .9s, border-color .6s;
-
-    &:hover {
-      transform: translate(-4px, -4px) !important;
-      box-shadow: 12px 12px 0 var(--shadow-color, var(--pink)) !important;
-    }
+    cursor: default;
+    transition: background-color .9s, border-color .6s;
   }
 
   &__card-img {
@@ -168,10 +164,6 @@
     margin: 4px 0 8px;
     line-height: 1.05;
     transition: color 0.15s ease;
-  }
-
-  &__card:hover &__card-title {
-    color: var(--blue);
   }
 
   &__card-headline {
