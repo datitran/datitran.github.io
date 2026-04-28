@@ -5,6 +5,11 @@ import objectDetectionImg from '../static/object_detection.jpg';
 import raccoonDetectorImg from '../static/raccoon_detector.jpg';
 import face2faceImg from '../static/face2face.jpg';
 import jupyterRevealImg from '../static/jupyter_reveal.gif';
+import idealoHotelImg from '../static/idealo_hotel.jpg';
+import apacheNifiImg from '../static/apache_nifi.jpg';
+import readaloudWeltImg from '../static/readaloud_welt.jpg';
+import idealoTeamImg from '../static/idealo_team_photo.jpg';
+import speakerMicImg from '../static/speaker_microphone_le_featured.jpg';
 
 export const DAT = {
   name: "Dat Tran",
@@ -53,12 +58,12 @@ export const SERVICES = [
 export const PROJECTS = [
   {
     title: "ForwardTacotron",
-    org: "Axel Springer / AS Ideas",
+    org: "Axel Springer",
     year: "2020",
-    img: employerBrandingImg,
+    img: speakerMicImg,
     blurb: "Single-pass neural speech synthesis. Powered Axel Springer's brand voice, featured by NVIDIA.",
     tag: "Speech / TTS",
-    href: "https://github.com/as-ideas/ForwardTacotron",
+    href: "https://developer.nvidia.com/blog/creating-robust-neural-speech-synthesis-with-forwardtacotron/",
   },
   {
     title: "Image Quality Assessment",
@@ -76,7 +81,7 @@ export const PROJECTS = [
     img: objectDetectionImg,
     blurb: "TensorFlow + OpenCV demo that became one of TDS' most-read computer vision tutorials.",
     tag: "Computer Vision",
-    href: "https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32",
+    href: "https://medium.com/data-science/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32",
   },
   {
     title: "Raccoon Detector",
@@ -107,15 +112,75 @@ export const PROJECTS = [
   },
 ];
 
+export const INDUSTRY_PROJECTS = [
+  {
+    title: "Computer Vision",
+    org: "idealo",
+    img: idealoHotelImg,
+    bullets: [
+      "Used deep learning to automatically rank 300M+ hotel images at hotel.idealo.de by aesthetic and technical quality, improving listings for small and mid-sized hotels",
+      "Trained CNNs to auto-generate product galleries, reducing content team workflow time by 75%",
+    ],
+  },
+  {
+    title: "CRM",
+    org: "idealo",
+    img: apacheNifiImg,
+    bullets: [
+      "Concepted and set up a data engineering flow with Apache Nifi to automate idealo's CRM workflow — €1M in year 1, €2M in year 2, €3M in year 3",
+      "Built a tree-based classifier to predict non-purchases three days ahead of actual sales data",
+    ],
+  },
+  {
+    title: "(Tech) Transformation",
+    org: "Axel Springer",
+    img: employerBrandingImg,
+    bullets: [
+      "Established and managed the Axel Springer Tech Blog and idealo's Tech Blog",
+      "Devised and co-organized the Axel Springer TechCon 2019, the first group-wide tech conference",
+      "Face of the new employer branding for technology within the Axel Springer group",
+      "Introduced extreme programming practices (pair programming, TDD, balanced teams) and lean product development",
+    ],
+  },
+  {
+    title: "Readaloud",
+    org: "Axel Springer",
+    img: readaloudWeltImg,
+    bullets: [
+      "Developed a text-to-speech system to synthesize Welt.de articles",
+      "Managed R&D directions and guided product development — MVP went live after 5 months",
+      "Open-sourced TransformerTTS and ForwardTacotron, both widely adopted",
+    ],
+  },
+  {
+    title: "Leadership",
+    org: "idealo / Axel Springer",
+    img: leadershipImg,
+    bullets: [
+      "Co-head of idealo's data team as Head of Product — grew unit from 12 to 25 employees in year 1, personally hired 6 people in 9 months",
+      "Led AI efforts for Axel Springer SE as Head of AI on a group level, mission to turn the company AI-first",
+    ],
+  },
+  {
+    title: "Mentoring",
+    org: "Various",
+    img: idealoTeamImg,
+    bullets: [
+      "Introduced individual career development plans with weekly 1:1s for faster, goal-oriented career progression",
+      "Mentored several students from online courses such as Springboard",
+    ],
+  },
+];
+
 export const WRITING = [
   { title: "Building a Fast and Efficient Semantic Search System Using OpenVINO and Postgres", outlet: "Dev.to", date: "Oct 2024", href: "https://dev.to/datitran/building-a-fast-and-efficient-semantic-search-system-using-openvino-and-postgres-fd6" },
   { title: "Creating Robust Neural Speech Synthesis with ForwardTacotron", outlet: "NVIDIA Developer", date: "Aug 2020", href: "https://developer.nvidia.com/blog/creating-robust-neural-speech-synthesis-with-forwardtacotron/" },
   { title: "Deep Learning for Classifying Hotel Aesthetics Photos", outlet: "NVIDIA Developer", date: "Oct 2018", href: "https://devblogs.nvidia.com/deep-learning-hotel-aesthetics-photos/" },
   { title: "What is Minimum Viable (Data) Product?", outlet: "idealo Tech Blog", date: "Jun 2018", href: "https://medium.com/idealo-tech-blog/what-is-minimum-viable-data-product-49269e338d85" },
-  { title: "Why the AI Hype Train is Already off the Rails", outlet: "Built to Adapt", date: "Aug 2017", href: "https://builttoadapt.io/why-the-ai-hype-train-is-already-off-the-rails-and-why-im-over-ai-already-e7314e972ef4" },
-  { title: "How to train your own Object Detector with TensorFlow", outlet: "Towards Data Science", date: "Jul 2017", href: "https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9" },
-  { title: "My two cents on what makes a good data scientist", outlet: "Towards Data Science", date: "Jul 2017", href: "https://towardsdatascience.com/my-two-cents-on-what-makes-a-good-data-scientist-nowadays-fea67931766a" },
-  { title: "Building a Real-Time Object Recognition App", outlet: "Towards Data Science", date: "Jun 2017", href: "https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32" },
+  { title: "Why the AI Hype Train is Already off the Rails", outlet: "Built to Adapt", date: "Aug 2017", href: "https://medium.com/built-to-adapt/why-the-ai-hype-train-is-already-off-the-rails-and-why-im-over-ai-already-e7314e972ef4" },
+  { title: "How to train your own Object Detector with TensorFlow", outlet: "Towards Data Science", date: "Jul 2017", href: "https://medium.com/data-science/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9" },
+  { title: "My two cents on what makes a good data scientist", outlet: "Towards Data Science", date: "Jul 2017", href: "https://medium.com/data-science/my-two-cents-on-what-makes-a-good-data-scientist-nowadays-fea67931766a" },
+  { title: "Building a Real-Time Object Recognition App", outlet: "Towards Data Science", date: "Jun 2017", href: "https://medium.com/data-science/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32" },
 ];
 
 export const TALKS = [

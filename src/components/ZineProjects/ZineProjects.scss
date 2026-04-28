@@ -5,6 +5,25 @@
   border-bottom: $border-w solid var(--ink-line);
   transition: border-color .6s;
 
+  &__sub-label {
+    font-family: $mono;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 32px 0 16px;
+    color: var(--ink);
+    opacity: 0.55;
+    transition: color .6s;
+  }
+
+  &__industry-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+    margin-bottom: 40px;
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -27,6 +46,16 @@
       transform: translate(-4px, -4px) !important;
       box-shadow: 12px 12px 0 var(--shadow-color, var(--pink)) !important;
       outline: none;
+    }
+
+    &--industry {
+      cursor: default;
+
+      &:hover,
+      &:focus-visible {
+        transform: translate(-4px, -4px) !important;
+        box-shadow: 12px 12px 0 var(--shadow-color, var(--pink)) !important;
+      }
     }
   }
 
@@ -92,6 +121,17 @@
     line-height: 1.5;
   }
 
+  &__bullets {
+    margin: 6px 0 0;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.55;
+
+    li {
+      margin-bottom: 4px;
+    }
+  }
+
   &__tag {
     margin-top: 12px;
   }
@@ -101,7 +141,8 @@
   .zine-projects {
     padding: $section-pad-mobile;
 
-    &__grid {
+    &__grid,
+    &__industry-grid {
       grid-template-columns: 1fr;
       gap: 20px;
     }
@@ -110,6 +151,10 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .zine-projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zine-projects__industry-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
