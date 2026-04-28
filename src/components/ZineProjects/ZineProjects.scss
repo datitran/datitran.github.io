@@ -5,60 +5,139 @@
   border-bottom: $border-w solid var(--ink-line);
   transition: border-color .6s;
 
+  &__sub-label {
+    font-family: $mono;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0 0 16px;
+    color: var(--ink);
+    opacity: 0.55;
+    transition: color .6s;
+  }
+
+  /* ---- Lead case study ---- */
+  &__lead {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 28px;
+    border: $border-w solid var(--ink-line);
+    background: var(--paper);
+    padding: 22px;
+    margin-bottom: 36px;
+    box-shadow: 10px 10px 0 var(--blue);
+    position: relative;
+    transition: background-color .9s, border-color .6s, box-shadow .6s;
+  }
+
+  &__featured-tag {
+    position: absolute;
+    top: -14px;
+    left: 22px;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 4px 12px;
+    font-family: $mono;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: background-color .6s, color .6s;
+  }
+
+  &__lead-img {
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 4/3;
+    border: $border-w-thin solid var(--ink-line);
+    filter: contrast(1.1);
+    transition: border-color .6s;
+  }
+
+  &__lead-meta {
+    display: flex;
+    justify-content: space-between;
+    font-family: $mono;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__lead-title {
+    font-family: $display;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin: 0 0 12px;
+    transition: color .6s;
+  }
+
+  &__lead-headline {
+    font-size: 17px;
+    line-height: 1.45;
+    margin: 0 0 16px;
+    font-style: italic;
+  }
+
+  &__lead-bullets {
+    font-size: 14px;
+    line-height: 1.55;
+    padding-left: 18px;
+    margin: 0 0 18px;
+
+    li { margin-bottom: 6px; }
+  }
+
+  &__lead-metrics {
+    display: flex;
+    gap: 18px;
+    border-top: $border-w-thin solid var(--ink-line);
+    padding-top: 14px;
+    transition: border-color .6s;
+  }
+
+  &__metric-k {
+    font-family: $display;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    color: var(--blue);
+    line-height: 1;
+    transition: color .6s;
+  }
+
+  &__metric-v {
+    font-family: $mono;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+    opacity: 0.7;
+  }
+
+  /* ---- Satellite cards ---- */
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 26px;
+    gap: 22px;
   }
 
   &__card {
-    color: var(--ink);
-    text-decoration: none;
-    display: block;
     border: $border-w solid var(--ink-line);
-    background: var(--paper);
     padding: 14px;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color .9s, border-color .6s;
-
-    &:hover,
-    &:focus-visible {
-      transform: translate(-4px, -4px) !important;
-      box-shadow: 12px 12px 0 var(--shadow-color, var(--pink)) !important;
-      outline: none;
-    }
-  }
-
-  &__badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 28px;
-    height: 28px;
-    border: $border-w-thin solid var(--ink-line);
     background: var(--paper);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: $mono;
-    font-size: 14px;
-    font-weight: 700;
-    transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
-    z-index: 2;
+    flex-direction: column;
+    cursor: default;
+    transition: background-color .9s, border-color .6s;
   }
 
-  &__card:hover &__badge {
-    background: var(--ink);
-    color: var(--paper);
-    transform: rotate(8deg);
-  }
-
-  &__card:hover &__title {
-    color: var(--blue);
-  }
-
-  &__img {
+  &__card-img {
     aspect-ratio: 4/3;
     background-size: cover;
     background-position: center;
@@ -66,40 +145,75 @@
     transition: filter .6s;
   }
 
-  &__meta {
-    margin-top: 12px;
+  &__card-meta {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     font-family: $mono;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
-  &__title {
+  &__card-title {
     font-family: $display;
     font-weight: 700;
-    font-size: 24px;
-    margin: 6px 0;
+    font-size: 22px;
     letter-spacing: -0.02em;
+    margin: 4px 0 8px;
+    line-height: 1.05;
     transition: color 0.15s ease;
   }
 
-  &__blurb {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
+  &__card-headline {
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 0 0 12px;
+    opacity: 0.85;
   }
 
-  &__tag {
-    margin-top: 12px;
+  &__card-metrics {
+    display: flex;
+    gap: 14px;
+    border-top: $border-w-thin dashed var(--ink-line);
+    padding-top: 10px;
+    margin-top: auto;
+    transition: border-color .6s;
+  }
+
+  &__card-mk {
+    font-family: $display;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--blue);
+    line-height: 1;
+    transition: color .6s;
+  }
+
+  &__card-mv {
+    font-family: $mono;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 3px;
+    opacity: 0.65;
   }
 }
 
 @media (max-width: 768px) {
   .zine-projects {
     padding: $section-pad-mobile;
+
+    &__lead {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    &__lead-title {
+      font-size: 28px;
+    }
 
     &__grid {
       grid-template-columns: 1fr;
@@ -109,7 +223,13 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .zine-projects__grid {
-    grid-template-columns: repeat(2, 1fr);
+  .zine-projects {
+    &__lead {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }

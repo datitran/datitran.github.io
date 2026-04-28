@@ -100,7 +100,30 @@ img {
   text-transform: uppercase;
   white-space: nowrap;
   box-shadow: 4px 4px 0 var(--ink-line);
-  transition: box-shadow .6s ease;
+  transition: box-shadow .2s ease, transform .2s ease, filter .2s ease;
+  text-decoration: none;
+}
+
+.sticker--interactive {
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    transform: rotate(var(--sticker-rot)) translate(-1px, -2px) !important;
+    box-shadow: 6px 6px 0 var(--ink-line);
+    filter: saturate(1.1);
+  }
+
+  &:active {
+    transform: rotate(var(--sticker-rot)) translate(2px, 2px) !important;
+    box-shadow: 1px 1px 0 var(--ink-line);
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 3px;
+  }
 }
 
 :root[data-theme="dark"] .sticker {
