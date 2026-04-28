@@ -30,13 +30,13 @@ export const SERVICES = [
     title: "Tech due diligence",
     glyph: "01",
     blurb: "Code quality audits, architectural review, tech-stack and roadmap assessment for investors and acquirers.",
-    bullets: ["Code & architecture review", "Tech stack assessment", "Roadmap critique"],
+    bullets: ["Code & architecture review", "Tech stack assessment", "Roadmap evaluation"],
   },
   {
     id: "talks",
     title: "Keynote talks",
     glyph: "02",
-    blurb: "Introductory and advanced AI talks for technical and non-technical audiences — Generative AI to classical ML.",
+    blurb: "Introductory and advanced AI talks for technical and non-technical audiences — Generative AI, classical ML to AI for business.",
     bullets: ["Conferences & summits", "Internal company events", "Panels & podcasts"],
   },
   {
@@ -51,7 +51,7 @@ export const SERVICES = [
     title: "Sparring partner",
     glyph: "04",
     blurb: "On-call advisor for management and working-level teams — strategy, hiring, architecture, hard calls.",
-    bullets: ["Exec sparring", "Hands-on review", "Hiring panels"],
+    bullets: ["Fractional CTO & exec sparring", "Hands-on review and delivery", "Talent assessment & hiring support"],
   },
 ];
 
@@ -220,7 +220,7 @@ export const STATS = [
   { label: "Years in tech leadership", value: "20+" },
   { label: "LinkedIn followers", value: "76k+" },
   { label: "Talks & podcasts", value: "100+" },
-  { label: "GitHub stars", value: "5k+" },
+  { label: "GitHub stars", value: "10k+" },
 ];
 
 export const OSS_REPOS = [

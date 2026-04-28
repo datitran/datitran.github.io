@@ -13,10 +13,10 @@ const ZineAbout = () => (
       <div>
         <p>
           I'm a seasoned technology and business leader with extensive experience in creating, transforming and leading both large and small organizations. As the former{' '}
-          <span style={{ background: PINK, color: '#fff', padding: '0 4px', fontWeight: 700 }}>Head of AI at Axel Springer SE</span>, I established and led their AI division — shipping open source the field still uses (TransformerTTS, ForwardTacotron) and organizing the first group-wide TechCon.
+          <span style={{ background: PINK, color: '#fff', padding: '0 4px', fontWeight: 700 }}>Head of AI at Axel Springer SE</span>, I established and led their AI division — shipping open source the field still uses (imagededup, TransformerTTS, ForwardTacotron) and organizing the first group-wide TechCon.
         </p>
         <p>
-          At <a href="https://www.idealo.de/" className="zine-about__link zine-about__link--blue">idealo.de</a>, I led a data team that turned the department from a cost center into a profit center — driving CRM campaigns, optimizing UX, and contributing to one of Germany's most-watched OSS portfolios.
+          At <a href="https://www.idealo.de/" className="zine-about__link zine-about__link--blue">idealo.de</a>, I led a data team that turned the department from a cost center into a profit center — driving CRM campaigns, optimizing UX, and being one of the first ML teams in Germany to adopt transformers early on as a technology.
         </p>
       </div>
       <div>
