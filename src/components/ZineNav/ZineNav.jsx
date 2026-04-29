@@ -26,10 +26,14 @@ class ZineNav extends Component {
     e.preventDefault();
     const id = href.replace('#', '');
     const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-    this.setState({ menuOpen: false });
+    if (!el) return;
+    this.setState({ menuOpen: false }, () => {
+      requestAnimationFrame(() => {
+        const offset = 70;
+        const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
   };
 
   render() {
