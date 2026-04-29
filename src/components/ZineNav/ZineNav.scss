@@ -110,7 +110,7 @@
 
 @media (max-width: 900px) {
   .zine-nav {
-    flex-wrap: wrap;
+    position: sticky;
     padding: 14px 16px;
 
     &__subtitle {
@@ -119,16 +119,20 @@
 
     &__burger {
       display: block;
-      order: 2;
     }
 
     &__links {
       display: none;
-      width: 100%;
-      order: 4;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
       flex-direction: column;
-      padding: 16px 0;
+      padding: 16px;
       gap: 12px;
+      background: var(--paper);
+      border-bottom: $border-w solid var(--ink-line);
+      z-index: 50;
 
       &--open {
         display: flex;
